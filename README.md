@@ -13,5 +13,3 @@
 *  RPC支持-提供包括PHPRpc、HProse、jsonRPC和Yar在内远程调用解决方案
 *  MongoDb支持-提供NoSQL的支持
 *  缓存支持-提供了包括文件、数据库、Memcache、Xcache、Redis等多种类型的缓存支持
-
-![ABC](http://www.daqian.org.cn/wp-content/uploads/2014/07/20140810164215.jpg) 
