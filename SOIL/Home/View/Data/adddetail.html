@@ -1,0 +1,35 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div " style="height:auto;width: 50%;">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li><a href="{:U('Data/index')}">数据表单</a></li>
+		  <li class="active">增加值</li>
+		</ol>
+		<form  method="post" action="{:U('Data/adddetail',array('namee'=>$title))}">
+		<for start="0" end="$count">
+			
+		
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">{$name[$i]}-----属性值：{$nature[$i]['type']}</label>
+		    <if condition="$nature[$i]['type'] eq 'text' ">
+		    <textarea class="form-control" rows="4" name="{$name[$i]}" placeholder="{$nature[$i]['comment']}">
+		    	{$nature[$i]['comment']}
+		    </textarea>
+		    <else />
+		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{$nature[$i]['comment']}" name="{$name[$i]}" 		    	
+		    <if condition="($nature[$i]['default'] neq '') OR ($name[$i] eq 'id')">
+		    	readonly
+		    </if>>
+		    </if>
+		  </div>
+		
+		  
+		</for>
+		<div align="right">
+		  	<button type="submit" class="btn btn-primary">添加</button>
+		</div>
+		</form>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

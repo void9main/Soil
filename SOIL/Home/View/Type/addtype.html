@@ -1,0 +1,34 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto;width: 50%;">
+    	<ol class="breadcrumb">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li><a href="{:U('Type/typelist')}">权限管理</a></li>
+		  <li class="active">新增组</li>
+		</ol>
+    	<form role="form" method="post" action="{:U('Type/addtype')}">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">权限名称</label>
+		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="name" name="name" value="{$detail[0]['typename']}">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">权限状态--<small>(1启用)(0停止)</small></label>
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="state" name="state" value="{$detail[0]['state']}">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">权限描述--<small>简单描述</small></label>
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="dis" name="dis" value="{$detail[0]['dis']}">
+		  </div>
+		   <div class="form-group">
+		    <label for="exampleInputPassword1">引导UID--<small>权限内容用(英文,号)分开</small></label>
+		    <textarea  class="form-control" id="exampleInputPassword1" name="content">
+		    		{$detail[0]['uid']}
+		    </textarea>
+		  </div>
+		  <div align="right">
+		  <button type="submit" class="btn btn-success">提交</button>
+		  </div>
+		</form>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

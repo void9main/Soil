@@ -1,0 +1,1220 @@
+[ 2016-07-12T08:56:58+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T08:56:59+08:00 ] ::1 /soil/index.php/Home/User/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T08:57:08+08:00 ] ::1 /soil/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( name='demo' )  [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-12T08:57:11+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T08:57:12+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T08:57:15+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T09:04:24+08:00 ] ::1 /soil/index.php/Home/Type/accredit/name/demo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_type` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sj_type`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( name='demo' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 96 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 117 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 123 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 117 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 123 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 117 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 123 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 117 行.
+NOTIC: [8] Use of undefined constant typename - assumed 'typename' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\07e8d741197fe097e3573be8323c08b2.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T09:06:52+08:00 ] ::1 /soil/index.php/Home/Type/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_type`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T09:06:54+08:00 ] ::1 /soil/index.php/Home/Type/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_usergroup`  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T09:06:56+08:00 ] ::1 /soil/index.php/Home/Type/actionlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_typerule` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sj_typerule`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T09:36:07+08:00 ] ::1 /soil/index.php/Home/Type/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_type`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T09:36:13+08:00 ] ::1 /soil/index.php/Home/Type/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_usergroup`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T09:36:16+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T09:49:24+08:00 ] ::1 /soil/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_type`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T09:49:33+08:00 ] ::1 /soil/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user` WHERE `name` = 'demo'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T09:49:36+08:00 ] ::1 /soil/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_type`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T09:51:29+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 24 行.
+
+[ 2016-07-12T09:51:54+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T09:52:10+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 24 行.
+
+[ 2016-07-12T09:52:37+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0000s ]
+
+[ 2016-07-12T09:53:11+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+
+[ 2016-07-12T09:53:40+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+
+[ 2016-07-12T09:53:50+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 25 行.
+
+[ 2016-07-12T09:54:05+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+
+[ 2016-07-12T09:58:34+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+
+[ 2016-07-12T09:58:43+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+
+[ 2016-07-12T09:59:23+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 25 行.
+
+[ 2016-07-12T10:01:09+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:01:15+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:01:17+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T10:01:42+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0020s ]
+
+[ 2016-07-12T10:03:09+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0000s ]
+
+[ 2016-07-12T10:04:34+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:04:55+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:28:55+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:31:37+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T10:31:39+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:31:53+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:33:17+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:33:20+08:00 ] ::1 /soil/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:33:20+08:00 ] ::1 /soil/index.php/Home/User/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T10:33:22+08:00 ] ::1 /soil/index.php/Home/User/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T10:33:29+08:00 ] ::1 /soil/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( name='demo' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+ERR: Think\Controller:type_check方法不存在！
+
+[ 2016-07-12T10:33:32+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T10:33:45+08:00 ] ::1 /soil/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:33:45+08:00 ] ::1 /soil/index.php/Home/User/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:34:00+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T10:34:02+08:00 ] ::1 /soil/index.php/Home/User/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:34:16+08:00 ] ::1 /soil/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( name='demo' )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-12T10:34:19+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T10:34:30+08:00 ] ::1 /soil/index.php/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T10:34:30+08:00 ] ::1 /soil/index.php/Home/User/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:34:37+08:00 ] ::1 /soil/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( name='demo' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='demo' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:34:40+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-12T10:34:49+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:36:08+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T10:37:36+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:37:44+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-12T10:38:13+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-12T10:39:31+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:58:54+08:00 ] ::1 /soil/index.php/Home/Data/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: show table status [ RunTime:0.0450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:58:57+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/name/sj_datalist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_datalist' [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sj_datalist`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-12T10:59:00+08:00 ] ::1 /soil/index.php/Home/Data/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: show table status [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Fixed - assumed 'Fixed' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+

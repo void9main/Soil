@@ -1,0 +1,56 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li><a href="{:U('Type/index')}">用户列表</a></li>
+		  <li class="active">授权操作</li>
+		</ol>
+		<h4>{$name}所在组列表{$var2['id']}</h4>
+		<table class="table table-bordered">
+			<tr>
+				<th>#ID</th>
+				<th>权限名称</th>
+				<th>权限描述</th>
+				<th>权限状态</th>
+				<th>状态</th>
+				<th>操作</th>
+				<!--<img src='!-APP-!/Public/verify/' />-->
+			</tr>
+		<volist name="var1" id="vo">
+			<tr>
+				<td>{$vo.id}</td>
+				<td>{$vo.typename}</td>
+				<td>{$vo.dis}</td>
+				<td>
+					<if condition="$vo.state eq '1' ">
+						开启
+						<else />
+						停止
+					</if>
+				</td>
+				<td>
+					<in name="vo[typename]" value="$var2">
+					<button type="button" class="btn btn-success btn-xs active">已获得</button>
+					<else/>
+					<button type="button" class="btn btn-warning btn-xs active">未获得</button>	
+					</in>
+				</td>
+				
+				<td>
+					<in name="vo[typename]" value="$var2">
+					<a href="{:U('Type/accredit',array('new'=>$vo['typename'],'id'=>$var3,'name'=>$name,'state'=>'deprive'))}">
+					<button class="btn-danger btn-xs">剥夺权限</button>
+					</a>
+					<else/>
+					<a href="{:U('Type/accredit',array('new'=>$vo['typename'],'id'=>$var3,'name'=>$name,'state'=>'give'))}">
+					<button class="btn-primary btn-xs">授予权限</button>
+					</a>
+					</in>
+				</td>
+			</tr>
+		</volist>
+		</table>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

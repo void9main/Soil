@@ -1,0 +1,27 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div " style="height:auto;width: 50%;">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li><a href="{:U('Data/index')}">数据表单</a></li>
+		  <li class="active">添加表格</li>
+		</ol>
+		<form role="{:U('Data/addtab')}" method="post">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">表格名称</label>
+		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="sj_+后缀（英文）" name="name" />
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">字符校对集<small>--默认</small></label>
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" value="utf8" name="utf-8" />
+		  </div>
+		   <div class="form-group">
+		    <label for="exampleInputPassword1">备注</label>
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="填写表格备注" name="comment">
+		  </div>
+		<button type="submit" name="add_td" class="btn btn-success">保存</button>
+		</a>		
+		</form>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

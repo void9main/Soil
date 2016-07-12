@@ -1,0 +1,39 @@
+<include file="Public:header" />
+	<body style="background-color: #f3f3f3;">
+	<div class="content" align="center">
+			<div style="margin-top: 100px;">
+			<img src="__IMG__/logo.png" style="width: 50px;height: 50px;"/>
+			<h2>Soil</h2>
+			</div>
+		<form method="post" action="{:U('User/login')}">
+		<div class="content login-content">
+			<br />
+			<div style="width: 350px;">
+			<hr class="style-eight-top">
+			</div>
+			<br />
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Username" size="40" name="name"/>
+			</div>
+			<br /><br />
+			<div class="input-group">
+			  <input type="password" class="form-control" placeholder="Password" size="40" name="pwd"/>
+			</div>
+			<br /><br />
+			<div class="content" align="left" style="margin-left: 75px;">
+			<input type="checkbox" class="login-hr" id="myCheckbox" name="check">
+			<label class="login-l-left">下次自动登录</label>
+			<label class="login-l-right">忘记密码了？</label>
+			</div>
+			<br />
+			<button type="submit" class="btn btn-primary" style="width: 300px;" >登录</button>
+			
+			<div style="width: 350px;">
+				<br />
+			<hr class="style-eight-bom">
+			</div>
+		</div>
+		</form>
+	</div>
+	</body>
+</html>

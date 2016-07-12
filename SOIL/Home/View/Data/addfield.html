@@ -1,0 +1,52 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div " style="height:auto;width: 50%;">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li><a href="{:U('Data/index')}">数据表单</a></li>
+		  <li class="active">增加字段</li>
+		</ol>
+		<form role="form" action="{:U('Data/addfield',array('names'=>$names))}" method="post">
+		  <div class="form-group">
+		    <label for="exampleInputtext1">字段名称</label>
+		    <input type="text" class="form-control" id="exampleInputtext1" placeholder="" name="title">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputtext1">字段排名--<small>在什么字段后面</small></label>
+		    <select class="form-control" name="after">
+		    	<volist name="name" id="vo">
+		         <option>{$vo}</option>
+		        </volist>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputtext1">字段类型</label>
+		    <select class="form-control" name="type" id="type">
+		         <option>INT(10)</option>
+		         <option>INT(50)</option>
+		         <option>INT(100)</option>
+		         <option>VARCHAR(10)</option>
+		         <option>VARCHAR(50)</option>
+		         <option>VARCHAR(255)</option>
+		         <option>TEXT</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputtext1">字段默认值</label>
+		    <input type="text" class="form-control" id="exampleInputtext1" placeholder="text" name="default">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputtext1">字符集--<small>默认utf-8</small></label>
+		    <input type="text" class="form-control" id="exampleInputtext1" placeholder="text" value="utf-8">
+		  </div>
+		   <div class="form-group">
+		    <label for="exampleInputtext1">字段备注</label>
+		    <input type="text" class="form-control" id="exampleInputtext1" placeholder="text" name="comment">
+		  </div>
+		  <div align="right">
+		  <button type="submit" class="btn btn-success">添加保存</button>
+		  </div>
+		</form>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

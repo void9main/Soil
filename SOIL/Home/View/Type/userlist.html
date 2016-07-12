@@ -1,0 +1,53 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li class="active">用户组管理</li>
+		</ol>
+		<div align="right" class="type-top-div">
+			<button type="button" class="btn btn-primary btn-sm">
+				新增组
+			</button>
+		</div>
+		<table class="table table-hover table-striped">
+		<tr>
+			<th>#Id</th>
+			<th>组名</th>
+			<th>用户组UID</th>
+			<th>用户组成立时间</th>
+			<th>对应请权限组</th>
+			<th>用户组状态</th>
+			<th>补充字段</th>
+			<th>操作</th>
+		</tr>
+		<volist name="data" id="vo">
+		<tr>
+			<td>{$vo.id}</td>
+			<td>{$vo.name}</td>
+			<td>{$vo.uid}</td>
+			<td>{$vo.time}</td>
+			<td>
+				<button type="button" class="btn btn-success btn-xs">权限组分配</button>
+			</td>
+			<td>
+				<if condition="$vo.state eq 1">
+					启用
+				<else />
+					停用
+				</if>
+			</td>
+			<td>{$vo.replenish}</td>
+			<td>
+				<a href="{:U('Type/deleteaccount?id='.$vo['id'])}">
+				<button type="button" class="btn btn-danger btn-xs">删除</button>
+				</a>
+				<a href="{:U('Type/accredit?name='.$vo['name'])}">
+				<button type="button" class="btn btn-success btn-xs">添加成员</button>
+				</a>
+			</td>
+		</tr>
+		</volist>
+    	</table>
+    <!--body-->
+<include file="Base:common-f" />

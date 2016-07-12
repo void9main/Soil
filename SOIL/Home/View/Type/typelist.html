@@ -1,0 +1,62 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li class="active">权限组管理</li>
+		</ol>
+		<div align="right" class="type-top-div">
+		<a href="{:U('Type/addtype')}">
+		<button type="button" class="btn btn-primary btn-sm">新增组</button>
+		</a>
+		</div>
+    	<table class="table table-hover table-striped">
+		<tr>
+			<th>#Id</th>
+			<th>权限组</th>
+			<th>权限成立时间</th>
+			<th>权限描述</th>
+			<th>授权id</th>
+			<th>状态</th>
+			<th>权限内容</th>
+			<th>操作</th>
+		</tr>
+		<volist name="data" id="vo">
+		<tr>
+			<td>{$vo.id}</td>
+			<td>{$vo.typename}</td>
+			<td>{$vo.time}</td>
+			<td>{$vo.dis}</td>
+			<td>{$vo.uid}</td>
+			<td>
+			<if condition="$vo.state eq '1' ">
+				启动
+			<else />
+				停止
+			</if>
+			</td>
+			<td>
+				<a href="">
+				<button type="button" class="btn btn-success btn-xs">行为分配</button>
+				</a>
+			</td>
+			<td>
+				<if condition="$vo.state eq '1' ">
+				<a href="{:U('Type/typestate',array('var'=>'0','id'=>$vo['id']))}">
+				<button type="button" class="btn btn-danger btn-xs">停用</button>
+				</a>
+				<else />
+				<a href="{:U('Type/typestate',array('var'=>'1','id'=>$vo['id']))}">
+				<button type="button" class="btn btn-success btn-xs">启用</button>
+				</a>
+				</if>
+				<a href="{:U('Type/addtype',array('state'=>'detail','id'=>$vo['id']))}">
+				<button type="button" class="btn btn-success btn-xs">详情</button>
+				</a>
+			</td>
+		</tr>
+		</volist>
+    	</table>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

@@ -1,0 +1,39 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li class="active">用户列表</li>
+		</ol>
+    	<table class="table table-hover table-striped">
+		<tr>
+			<th>#Id</th>
+			<th>账号</th>
+			<th>密码</th>
+			<th>添加时间</th>
+			<th>权限组</th>
+			<th>日志记录</th>
+			<th>操作</th>
+		</tr>
+		<volist name="data" id="vo">
+		<tr>
+			<td>{$vo.id}</td>
+			<td>{$vo.name}</td>
+			<td>{$vo.password}</td>
+			<td>{$vo.time}</td>
+			<td>{$vo.typeid}</td>
+			<td>{$vo.logid}</td>
+			<td>
+				<a href="{:U('Type/deleteaccount?id='.$vo['id'])}">
+				<button type="button" class="btn btn-danger btn-xs">删除</button>
+				</a>
+				<a href="{:U('Type/accredit?name='.$vo['name'])}">
+				<button type="button" class="btn btn-success btn-xs">权限状态</button>
+				</a>
+			</td>
+		</tr>
+		</volist>
+    	</table>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />

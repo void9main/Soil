@@ -1,0 +1,48 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li class="active">行为组管理</li>
+		</ol>
+		<div align="right" class="type-top-div">
+			<button type="button" class="btn btn-primary btn-sm">
+				添加行为
+			</button>
+		</div>
+		<table class="table table-hover table-striped">
+		<tr>
+			<th>#Id</th>
+			<th>规则所属组权限组</th>
+			<th>规则地址</th>
+			<th>规则表述</th>
+			<th>规则描述</th>
+			<th>状态</th>
+			<th>附加条件</th>
+			<th>操作</th>
+		</tr>
+		<volist name="data" id="vo">
+		<tr>
+			<td>{$vo.id}</td>
+			<td>{$vo.module}</td>
+			<td>{$vo.url}</td>
+			<td>{$vo.name}</td>
+			<td>{$vo.dis}</td>
+			<td>
+				<if condition="$vo.state eq 1">
+					启用
+				<else />
+					停用
+				</if>
+			</td>
+			<td>{$vo.condition}</td>
+			<td>
+				<a href="{:U('Type/deleteaccount?id='.$vo['id'])}">
+				<button type="button" class="btn btn-danger btn-xs">删除</button>
+				</a>
+			</td>
+		</tr>
+		</volist>
+    	</table>
+    <!--body-->
+<include file="Base:common-f" />

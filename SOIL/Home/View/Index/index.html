@@ -1,0 +1,117 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content index-div-main">
+    	<div class="index-div" style="width:22%;">
+    		<div class="page-header">
+			  <h1>Soil系统</h1>
+			  <h2><small>完整的数聚平台-简单|可靠</small></h2>
+			  <h2><small>The Number Platform-simple|reliable</small></h2>
+			  <h2><small>想你所想,指引未来</small></h2>
+			  <h2><small>Think what you to think, To guide the future</small></h2>
+			  <hr>
+			  <h3><small>当前时间</small></h3>
+			  <label id="show"></label>
+			  <iframe width="800" scrolling="no" height="120" frameborder="0" allowtransparency="true" 
+			  	src="http://i.tianqi.com/index.php?c=code&id=19&color=%23002060&bdc=%230070C0&icon=3&temp=1&num=1">
+			  </iframe>
+			</div>
+    	</div>
+    	<div class="index-div" style="width:30%">
+    		<img src="__IMAGE__/index.jpg" style="width:100%;height:100%;"/>
+    	</div>
+    	<div class="index-div" style="width:46%;">
+    		 <div id="main" style="width:auto;height:800px;"></div>
+    	</div>
+    </div>
+    <script type="text/javascript">
+    //显示当前动态时间
+	var initializationTime=(new Date()).getTime();
+	function showLeftTime()
+	{
+	var now=new Date();
+	var month=now.getMonth()+1;
+	var day=now.getDate();
+	var hours=now.getHours();
+	var minutes=now.getMinutes();
+	var seconds=now.getSeconds();
+	document.all.show.innerHTML=month+"月"+day+"日 "+hours+":"+minutes+":"+
+	seconds
+	+"";
+	var timeID=setTimeout(showLeftTime,1000);
+	}
+	// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        option = {
+		    backgroundColor: '#b0a5a2',
+		
+		    title: {
+		        text: 'Soil系统监控',
+		        left: 'center',
+		        top: 20,
+		        textStyle: {
+		            color: '#272822'
+		        }
+		    },
+		
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		
+		    visualMap: {
+		        show: false,
+		        min: 80,
+		        max: 600,
+		        inRange: {
+		            colorLightness: [0, 1]
+		        }
+		    },
+		    series : [
+		        {
+		            name:'详细信息',
+		            type:'pie',
+		            radius : '55%',
+		            center: ['50%', '50%'],
+		            data:[
+		                {value:335, name:'用户数量'},
+		                {value:310, name:'模板数量'},
+		                {value:274, name:'部门情况'},
+		                {value:235, name:'数聚链接'},
+		                {value:400, name:'全局情况'}
+		            ].sort(function (a, b) { return a.value - b.value}),
+		            roseType: 'angle',
+		            label: {
+		                normal: {
+		                    textStyle: {
+		                        color: 'rgba(48, 113, 169, 225)'
+		                    }
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    lineStyle: {
+		                        color: 'rgba(48, 113, 169, 225)'
+		                    },
+		                    smooth: 0.2,
+		                    length: 10,
+		                    length2: 20
+		                }
+		            },
+		            itemStyle: {
+		                normal: {
+		                    color: '#c23531',
+		                    shadowBlur: 200,
+		                    shadowColor: 'rgba(48, 113, 169, 0.5)'
+		                }
+		            }
+		        }
+		    ]
+		};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+	</script>
+
+    <!--body-->
+<include file="Base:common-f" />

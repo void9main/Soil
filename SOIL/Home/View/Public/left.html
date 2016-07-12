@@ -1,0 +1,27 @@
+<div class="left-style" align="center">
+	<ul class="nav nav-list bs-docs-sidenav affix-top " style="background-color: #e0e9f3;">
+		
+	<volist name="list" id="vo">
+		<li class="active">
+		<a href="/soil/index.php/Home/{$vo.url}">
+			<i class="icon-chevron-right glyphicon glyphicon-inbox"></i>{$vo.list}
+		</a>
+		</li>
+	</volist>
+	</ul>
+	<script type="text/javascript">
+	$(function() {
+		$('.nav li').click(function(e) {
+			$('.nav li').removeClass('active');
+			//$(e.target).addClass('active');
+			$(this).addClass('active');
+		});
+	});
+	function show(){
+		document.getElementById('iDBody').style.display = "";
+	}
+	function hide(){
+		document.getElementById('iDBody').style.display = "none";
+	}
+	</script>
+</div>

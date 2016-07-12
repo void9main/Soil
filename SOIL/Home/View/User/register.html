@@ -1,0 +1,52 @@
+<include file="Public:header" />
+	<body style="background-color: #f3f3f3;">
+	<div class="content" align="center">
+			<div style="margin-top: 50px;">
+			<a href="{:U('Index/index')}">
+			<img src="__IMG__/logo.png" style="width: 50px;height: 50px;"/>
+			</a>
+			<h2>Soil</h2>
+			</div>
+		<form method="post" action="{:U('User/register')}">
+		<div class="content register-content">
+			<br />
+			<div style="width: 350px;">
+			<hr class="style-eight-topr">
+			</div>
+			<br />
+			<div class="input-group" align="left">
+				<label for="exampleInputEmail1">用户名称</label>
+			 	<input type="text" class="form-control" placeholder="用户名" size="40" name="name"/>
+			</div>
+			<br />
+			<div class="input-group" align="left">
+				<label for="exampleInputEmail1">输入密码</label>
+			  	<input type="password" class="form-control" placeholder="输入密码" size="40" name="pwd1"/>
+			</div>
+			<br />
+			<div class="input-group" align="left">
+				<label for="exampleInputEmail1">再次输入</label>
+			  	<input type="password" class="form-control" placeholder="再次输入" size="40" name="pwd2"/>
+			</div>
+			<br />
+			<div class="input-group" align="left">
+				<label for="exampleInputEmail1">用户分组</label>
+				<br />
+			  	 <select class="form-control" name="typeid" id="typeid" style="width: 360px;">
+			  	 <volist name="type" id="vo">
+		         <option>{$vo['typename']}</option>
+		         </volist>
+		    </select>
+			</div>
+			<br /><br />
+			<button type="submit" class="btn btn-success" style="width: 360px;" >注册</button>
+			
+			<div style="width: 350px;">
+				<br />
+			<hr class="style-eight-bom">
+			</div>
+		</div>
+		</form>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+.style-eight-top:after {
+    content: "系统登录";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: white;
+    font-family: "微软雅黑";
+}
+.style-eight-bom:after {
+    content: "Soil";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: white;
+    font-family: "微软雅黑";
+}
+.login-content{
+	border:1px solid #f2f2f2;width: 450px;height: 400px;background-color: #FFFFFF;
+}
+.login-l-left{
+	font-family: '微软雅黑';text-indent: 2em;
+}
+.login-l-right{
+	font-family: '微软雅黑';text-indent: 7em;
+}
+.login-hr{
+	position:absolute;clip:rect(5,14,14,5);background:red
+}
+.footer-style{
+	font-family: "微软雅黑";
+	color: #43a9de;
+}

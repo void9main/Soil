@@ -1,0 +1,63 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div " style="height:auto;">
+    	<ol class="breadcrumb col-lg-12">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li><a href="{:U('Data/index')}">数据表单</a></li>
+		  <li class="active">分表详情</li>
+		</ol>
+		<h4>表：{$title}</h4>
+		<table class="table table-bordered" id="tab">
+        <tr>
+        <td>字段名称</td>
+        <volist name="name" id="vo">
+			<td><strong>{$vo}</strong></td>
+		</volist>
+		<td>
+			操作
+		</td>
+        </tr>
+        <tr>
+        <td>字段备注</td>
+        <volist name="comment" id="vo1">
+			<td>{$vo1.备注}</td>
+		</volist>
+        </tr>
+	    <volist name="data" id="vo2">
+	    <tr>
+	        <td>#值#</td>
+	        <volist name="name" id="vo">
+	        <td>
+	        	{$vo2.$vo}
+	        </td> 
+	        </volist>   
+	        <td>
+	        	<if condition="vo2.id eq ''">
+	        	<button type="button" class="btn btn-success btn-xs">保存</button>
+	        	<else />
+	        	<a href="{:U('Data/adddetail',array('id'=>$id))}">
+	        	<button type="button" class="btn btn-success btn-xs">修改</button>
+	        	</a>
+	        	<a href="{:U('Data/deletedata',array('id'=>$vo2['id'],'name'=>$title))}">
+	        	<button type="button" class="btn btn-danger btn-xs">删除</button>
+	        	</a>
+	        	</if>
+	        </td>
+        </tr>
+       </volist>
+		</table>
+		<ul class="pager">
+		  <li><a href="#">上一页</a></li>
+		  <li><a href="#">下一页</a></li>
+		</ul>
+		<div align="right">
+			<a href="{:U('Data/addfield',array('names'=>$title))}">
+			<button type="button" class="btn btn-success">增加字段</button>
+			</a>
+			<a href="{:U('Data/adddetail',array('names'=>$title))}">
+    		<button type="button" class="btn btn-success">增加值</button>
+    		</a>
+    	</div>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />
