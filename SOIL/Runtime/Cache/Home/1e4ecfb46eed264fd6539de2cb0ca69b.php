@@ -106,7 +106,7 @@
 			<th>用户组成立时间</th>
 			<th>对应请权限组</th>
 			<th>用户组状态</th>
-			<th>补充字段</th>
+			<th>所在权限组</th>
 			<th>操作</th>
 		</tr>
 		<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
@@ -115,7 +115,9 @@
 			<td><?php echo ($vo["uid"]); ?></td>
 			<td><?php echo ($vo["time"]); ?></td>
 			<td>
+				<a href="<?php echo U('Type/usertype',array('id'=>$vo['id']));?>">
 				<button type="button" class="btn btn-success btn-xs">权限组分配</button>
+				</a>
 			</td>
 			<td>
 				<?php if($vo["state"] == 1): ?>启用

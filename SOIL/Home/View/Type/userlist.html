@@ -18,7 +18,7 @@
 			<th>用户组成立时间</th>
 			<th>对应请权限组</th>
 			<th>用户组状态</th>
-			<th>补充字段</th>
+			<th>所在权限组</th>
 			<th>操作</th>
 		</tr>
 		<volist name="data" id="vo">
@@ -28,7 +28,9 @@
 			<td>{$vo.uid}</td>
 			<td>{$vo.time}</td>
 			<td>
+				<a href="{:U('Type/usertype',array('id'=>$vo['id']))}">
 				<button type="button" class="btn btn-success btn-xs">权限组分配</button>
+				</a>
 			</td>
 			<td>
 				<if condition="$vo.state eq 1">
