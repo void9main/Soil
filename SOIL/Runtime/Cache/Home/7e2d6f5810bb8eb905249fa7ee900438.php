@@ -50,7 +50,8 @@
 				<label for="exampleInputEmail1">用户分组</label>
 				<br />
 			  	 <select class="form-control" name="typeid" id="typeid" style="width: 360px;">
-			  	 <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo['typename']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+			  	 <option></option>
+			  	 <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo['name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 		    </select>
 			</div>
 			<br /><br />

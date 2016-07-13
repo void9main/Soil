@@ -15,6 +15,7 @@ class UserController extends BaseController {
 		
 		$var=$User->where("name='$name'")->select(); 
 		   	if($var[0]["password"]==md5($pwd)){
+		   		
 		   		$this->success("成功登录",U("Index/index"),2);
 				session('name',$name);       			//设置名称session
 				$this->type_check();
@@ -32,7 +33,7 @@ class UserController extends BaseController {
 		$data['typeid']=I("post.typeid");
 		$pwd1=I("post.pwd1");
 		$pwd2=I("post.pwd2");
-		$db=M('type');
+		$db=M('usergroup');
 		$User=M('user');
 		if($data['name']!=""){
 			if($pwd1!=$pwd2){
@@ -62,6 +63,7 @@ class UserController extends BaseController {
 	
 	public function logout(){
 		session('name',null);
+		session('rank',null);
 		$name = session('name');
 		if(!$name){
 			$this->redirect("User/Login");

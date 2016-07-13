@@ -26,6 +26,7 @@
     <!--<small>Simple|Reliable</small>-->
     &nbsp;&nbsp;
     <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-default" role="button">首页</a>
+    <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
     <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>
@@ -98,7 +99,7 @@
 			<th>账号</th>
 			<th>密码</th>
 			<th>添加时间</th>
-			<th>权限组</th>
+			<th>用户组</th>
 			<th>日志记录</th>
 			<th>操作</th>
 		</tr>
@@ -113,8 +114,8 @@
 				<a href="<?php echo U('Type/deleteaccount?id='.$vo['id']);?>">
 				<button type="button" class="btn btn-danger btn-xs">删除</button>
 				</a>
-				<a href="<?php echo U('Type/accredit?name='.$vo['name']);?>">
-				<button type="button" class="btn btn-success btn-xs">权限状态</button>
+				<a href="<?php echo U('Type/accredit',array('id'=>$vo['id'],'typeid'=>$vo['typeid']));?>">
+				<button type="button" class="btn btn-success btn-xs">分组</button>
 				</a>
 			</td>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>

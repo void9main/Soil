@@ -7,12 +7,19 @@ class BaseController extends Controller {
 		$data=$list->where("`type`='$type'")->select();
 		
 		$top=M('top');
-		$var=$top->select();               //TODO //修改权限方式
+		$rank=session('rank');
+		if($rank=="super"){
+		
+			$var=$top->select(); 
+		}else{
+		
+			$var=$top->where("`type`='$rank'")->select();               //TODO //修改权限方式	
+		}
 		
 		$this->assign("top",$var);
 		$this->assign("list",$data);
     }
-	Public function verify(){
+	Public function verify(){				//TODO 验证码生成函数
         import('ORG.Util.Image');
         Image::buildImageVerify();
     }
@@ -21,17 +28,14 @@ class BaseController extends Controller {
 		$name=session('name');
 		$rank=M('user');
 		$var=$rank->where("`name`='$name'")->select();
+		   
+		session('rank',$var[0]['typeid']);
 		
-		$var=explode(",",$var[0]['typeid']);
-		
-		$var=array_filter($var);   
-		
-		session('rank',$var);
 	}
 	public function page_limit($type,$num){				//分页函数
 		
 		$User = M($type); 								
-		// 实例化User对象
+		//  实例化User对象 TODO
 		
 		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
 		$list = $User->where('status=1')->order('create_time')->page($_GET['p'].",'$num'")->select();$this->assign('list',$list);

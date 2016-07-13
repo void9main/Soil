@@ -33,8 +33,9 @@
 				<label for="exampleInputEmail1">用户分组</label>
 				<br />
 			  	 <select class="form-control" name="typeid" id="typeid" style="width: 360px;">
+			  	 <option></option>
 			  	 <volist name="type" id="vo">
-		         <option>{$vo['typename']}</option>
+		         <option>{$vo['name']}</option>
 		         </volist>
 		    </select>
 			</div>

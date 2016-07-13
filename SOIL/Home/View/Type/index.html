@@ -11,7 +11,7 @@
 			<th>账号</th>
 			<th>密码</th>
 			<th>添加时间</th>
-			<th>权限组</th>
+			<th>用户组</th>
 			<th>日志记录</th>
 			<th>操作</th>
 		</tr>
@@ -27,8 +27,8 @@
 				<a href="{:U('Type/deleteaccount?id='.$vo['id'])}">
 				<button type="button" class="btn btn-danger btn-xs">删除</button>
 				</a>
-				<a href="{:U('Type/accredit?name='.$vo['name'])}">
-				<button type="button" class="btn btn-success btn-xs">权限状态</button>
+				<a href="{:U('Type/accredit',array('id'=>$vo['id'],'typeid'=>$vo['typeid']))}">
+				<button type="button" class="btn btn-success btn-xs">分组</button>
 				</a>
 			</td>
 		</tr>

@@ -9,6 +9,7 @@ class IndexController extends BaseController {
 		}else{
 			                                         
 			$this->left(); 					//首页平台方法
+			$this->type_check();
 			$this->display();
 		}  
     }

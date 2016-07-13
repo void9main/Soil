@@ -26,6 +26,7 @@
     <!--<small>Simple|Reliable</small>-->
     &nbsp;&nbsp;
     <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-default" role="button">首页</a>
+    <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
     <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>
@@ -93,45 +94,64 @@
 		  <li><a href="<?php echo U('Type/index');?>">用户列表</a></li>
 		  <li class="active">授权操作</li>
 		</ol>
+		<div style="display: none;" name="info" id="info">
+		<span class="label label-success">保存成功</span>
+		</div>
 		<h4><?php echo ($name); ?>所在组列表<?php echo ($var2['id']); ?></h4>
 		<table class="table table-bordered">
 			<tr>
 				<th>#ID</th>
-				<th>权限名称</th>
-				<th>权限描述</th>
-				<th>权限状态</th>
-				<th>状态</th>
-				<th>操作</th>
+				<th>用户所在组别</th>
+				<th>小组成立时间</th>
+				<th>小组状态</th>
+				<th>小组权限组别</th>
+				<th>操作（更换组别）</th>
 				<!--<img src='!-APP-!/Public/verify/' />-->
 			</tr>
-		<?php if(is_array($var1)): $i = 0; $__LIST__ = $var1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-				<td><?php echo ($vo["id"]); ?></td>
-				<td><?php echo ($vo["typename"]); ?></td>
-				<td><?php echo ($vo["dis"]); ?></td>
+			<tr>
+				<td><?php echo ($var[0]['id']); ?></td>
+				<td><?php echo ($var[0]['name']); ?></td>
+				<td><?php echo ($var[0]['time']); ?></td>
 				<td>
-					<?php if($vo["state"] == '1' ): ?>开启
+					<?php if($var[0]['state'] == '1' ): ?>开启
 						<?php else: ?>
 						停止<?php endif; ?>
 				</td>
 				<td>
-					<?php if(in_array(($vo[typename]), is_array($var2)?$var2:explode(',',$var2))): ?><button type="button" class="btn btn-success btn-xs active">已获得</button>
-					<?php else: ?>
-					<button type="button" class="btn btn-warning btn-xs active">未获得</button><?php endif; ?>
+					<?php echo ($var[0]['replenish']); ?>
 				</td>
 				
 				<td>
-					<?php if(in_array(($vo[typename]), is_array($var2)?$var2:explode(',',$var2))): ?><a href="<?php echo U('Type/accredit',array('new'=>$vo['typename'],'id'=>$var3,'name'=>$name,'state'=>'deprive'));?>">
-					<button class="btn-danger btn-xs">剥夺权限</button>
-					</a>
-					<?php else: ?>
-					<a href="<?php echo U('Type/accredit',array('new'=>$vo['typename'],'id'=>$var3,'name'=>$name,'state'=>'give'));?>">
-					<button class="btn-primary btn-xs">授予权限</button>
-					</a><?php endif; ?>
+				<select class="form-control" name="type" id="type" >
+					<option></option>
+					<?php if(is_array($var1)): $i = 0; $__LIST__ = $var1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><option><?php echo ($vo1["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+		    	</select>
 				</td>
-			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+			</tr>
+		</volist>
 		</table>
+		<div align="right">
+			<button type="button" class="btn btn-primary btn-sm" name="ajax" id="ajax">保存</button>
+		</div>
     </div>
     <!--body-->
+	<script>
+	$("#ajax").click(function(){
+		$var=$("#type ").val();					//TODO 获取选中的值
+		$.ajax({
+            type:'POST',
+		    url:"<?php echo U('Type/accredit',array('ids'=>$id));?>",
+		    data: {rank:$var},
+		    dataType:"text",
+		    success:function(result){			//ajax请求成功后触发的方法
+		    	if(result=="ok"){
+		    		$("#info").css('display',''); 
+		    		 window.location.href="<?php echo U('Type/index');?>";
+		    	}
+		    }
+       });
+	});
+	</script>
 
 	</body>
 	<footer>

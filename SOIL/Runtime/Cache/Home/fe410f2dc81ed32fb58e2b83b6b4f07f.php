@@ -26,6 +26,7 @@
     <!--<small>Simple|Reliable</small>-->
     &nbsp;&nbsp;
     <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-default" role="button">首页</a>
+    <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
     <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>

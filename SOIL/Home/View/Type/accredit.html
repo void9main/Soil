@@ -6,51 +6,66 @@
 		  <li><a href="{:U('Type/index')}">用户列表</a></li>
 		  <li class="active">授权操作</li>
 		</ol>
+		<div style="display: none;" name="info" id="info">
+		<span class="label label-success">保存成功</span>
+		</div>
 		<h4>{$name}所在组列表{$var2['id']}</h4>
 		<table class="table table-bordered">
 			<tr>
 				<th>#ID</th>
-				<th>权限名称</th>
-				<th>权限描述</th>
-				<th>权限状态</th>
-				<th>状态</th>
-				<th>操作</th>
+				<th>用户所在组别</th>
+				<th>小组成立时间</th>
+				<th>小组状态</th>
+				<th>小组权限组别</th>
+				<th>操作（更换组别）</th>
 				<!--<img src='!-APP-!/Public/verify/' />-->
 			</tr>
-		<volist name="var1" id="vo">
 			<tr>
-				<td>{$vo.id}</td>
-				<td>{$vo.typename}</td>
-				<td>{$vo.dis}</td>
+				<td>{$var[0]['id']}</td>
+				<td>{$var[0]['name']}</td>
+				<td>{$var[0]['time']}</td>
 				<td>
-					<if condition="$vo.state eq '1' ">
+					<if condition="$var[0]['state'] eq '1' ">
 						开启
 						<else />
 						停止
 					</if>
 				</td>
 				<td>
-					<in name="vo[typename]" value="$var2">
-					<button type="button" class="btn btn-success btn-xs active">已获得</button>
-					<else/>
-					<button type="button" class="btn btn-warning btn-xs active">未获得</button>	
-					</in>
+					{$var[0]['replenish']}
 				</td>
 				
 				<td>
-					<in name="vo[typename]" value="$var2">
-					<a href="{:U('Type/accredit',array('new'=>$vo['typename'],'id'=>$var3,'name'=>$name,'state'=>'deprive'))}">
-					<button class="btn-danger btn-xs">剥夺权限</button>
-					</a>
-					<else/>
-					<a href="{:U('Type/accredit',array('new'=>$vo['typename'],'id'=>$var3,'name'=>$name,'state'=>'give'))}">
-					<button class="btn-primary btn-xs">授予权限</button>
-					</a>
-					</in>
+				<select class="form-control" name="type" id="type" >
+					<option></option>
+					<volist name="var1" id="vo1">
+		         	<option>{$vo1.name}</option>
+		         	</volist>
+		    	</select>
 				</td>
 			</tr>
 		</volist>
 		</table>
+		<div align="right">
+			<button type="button" class="btn btn-primary btn-sm" name="ajax" id="ajax">保存</button>
+		</div>
     </div>
     <!--body-->
+	<script>
+	$("#ajax").click(function(){
+		$var=$("#type ").val();					//TODO 获取选中的值
+		$.ajax({
+            type:'POST',
+		    url:"{:U('Type/accredit',array('ids'=>$id))}",
+		    data: {rank:$var},
+		    dataType:"text",
+		    success:function(result){			//ajax请求成功后触发的方法
+		    	if(result=="ok"){
+		    		$("#info").css('display',''); 
+		    		 window.location.href="{:U('Type/index')}";
+		    	}
+		    }
+       });
+	});
+	</script>
 <include file="Base:common-f" />

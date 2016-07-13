@@ -69,42 +69,27 @@ class TypeController extends BaseController{
 	 }
 	 public function accredit(){
 	 	$this->left('type');
-		$name=I("get.name");	 //获取当前用户名称
-		$new=I('get.new');		 //获取传递值
-		$id=I("get.id");		 //获取传递id
-		$state=I("get.state");
+		$typeid=I("get.typeid");	//获取用户typeid
+		$id=I("get.id");		 	//获取当前用户id第一次
+		$ids=I("get.ids");			//获取当前用户id第二次
+		$rank=I("post.rank");
+		$type=M('usergroup');
 		$user=M('user');
-		$type=M('type');
-		$var1=$type->select();		
-		$var2=$user->where("name='$name'")->select();
 
+		$var=$type->where("`name`='$typeid'")->select();   	//TODO 查询当前名称
+		$var1=$type->select();								//TODO 查询所有数据
 		
-		if($state=="give"){
-				
-			$rank['typeid']=$var2[0]['typeid'].",".$new;
-		}else if($state=="deprive"){
-			
-			$var2 = str_replace("$new",'', $var2[0]['typeid']);
-			
-			$rank['typeid']=$var2;	
+		if($ids!=""){
+			$data['typeid']=$rank;
+			$val=$user->where("`id`=".$ids)->save($data);
+			echo "ok";
+			exit;
 		}
 		
-		$var3=$var2[0]['id'];
-		$var2=explode(",", $var2[0]['typeid']);
-
-		$this->assign('var1',$var1);;
-		$this->assign('var2',$var2);
-		$this->assign('var3',$var3);
-		$this->assign("name",$name);  
-		if($new!=""){
-			
-			$user->where('id='.$id)->save($rank);
-			$this->redirect("Type/accredit?name=".$name);
-			
-		}else if($new==""){
-			
-			$this->display();	
-		}
+		$this->assign("var",$var);
+		$this->assign("var1",$var1);
+		$this->assign("id",$id);
+		$this->display();	
 	 }
 	public  function deleteaccount(){
 		$id=I("get.id");
