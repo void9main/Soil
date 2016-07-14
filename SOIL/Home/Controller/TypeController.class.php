@@ -186,6 +186,52 @@ class TypeController extends BaseController{
 		$type->where("`id`=".$id)->delete();
 		$this->redirect("Type/userlist");
 	}
+	
+	//TODO 行为分配
+	public function addactionbytype(){
+		$this->left('type');
+		$id=I("get.id");
+		$ids=I("get.ids");    	//移除id
+		$ide=I("get.ide");		//添加id
+		$name=I("get.name");	//权限组名
+		$module=I("get.module");//规则名
+
+		
+		$type=M("type");
+		$rule=M('typerule');
+		
+		
+		if($ide!=""){				//添加
+			
+			
+			
+		}else if($ids!=""){			//移除
+			$move=$type->where("`typename`='$name'")->select();
+			$move['uid']=str_replace(','.$module,'',$move[0]['uid']);
+			$movel=$user->where("`id`='$ids'")->save($val);
+			//处理
+			if($var==1){
+					
+					$this->redirect("Type/addactionbytype?id='$ids'");
+				}else{
+					
+				$this->error("操作有误",U("Type/addactionbytype?id='$ids'"),1);
+			}	
+			//跳转
+		}else{
+			
+		$val=$type->where("`id`=".$id)->select();
+		//获取权限所有的值
+		$data=$rule->select();
+		//获取所有规则
+		$var=explode("，", $val[0]['uid']);
+		//本主规则值
+		$this->assign("val",$val);
+		$this->assign("var",$var);
+		$this->assign("data",$data);
+		$this->display();
+		}
+	}
 	/*
 	 * 行为组操作
 	 */

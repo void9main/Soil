@@ -121,7 +121,7 @@
 				停止<?php endif; ?>
 			</td>
 			<td>
-				<a href="<?php echo U('Type/addaction',array('id'=>$vo['id']));?>">
+				<a href="<?php echo U('Type/addactionbytype',array('id'=>$vo['id']));?>">
 				<button type="button" class="btn btn-success btn-xs">行为分配</button>
 				</a>
 			</td>

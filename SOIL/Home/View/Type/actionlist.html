@@ -19,7 +19,7 @@
 			<th>规则描述</th>
 			<th>状态</th>
 			<th>附加条件</th>
-			<th>操作</th>
+			<th align="center">操作</th>
 		</tr>
 		<volist name="data" id="vo">
 		<tr>
@@ -37,6 +37,11 @@
 			</td>
 			<td>{$vo.condition}</td>
 			<td>
+				<if condition="$vo.state eq 1">
+					<button type="buttn" class="btn btn-danger btn-xs">停用</button>
+					<else />
+					<button type="buttn" class="btn btn-primary btn-xs">启用</button>
+				</if>
 				<a href="{:U('Type/deleteaccount?id='.$vo['id'])}">
 				<button type="buttn" class="btn btn-danger btn-xs">删除</button>
 				</a>

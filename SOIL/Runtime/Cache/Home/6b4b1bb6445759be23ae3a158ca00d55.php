@@ -107,7 +107,7 @@
 			<th>规则描述</th>
 			<th>状态</th>
 			<th>附加条件</th>
-			<th>操作</th>
+			<th align="center">操作</th>
 		</tr>
 		<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 			<td><?php echo ($vo["id"]); ?></td>
@@ -122,6 +122,9 @@
 			</td>
 			<td><?php echo ($vo["condition"]); ?></td>
 			<td>
+				<?php if($vo["state"] == 1): ?><button type="buttn" class="btn btn-danger btn-xs">停用</button>
+					<?php else: ?>
+					<button type="buttn" class="btn btn-primary btn-xs">启用</button><?php endif; ?>
 				<a href="<?php echo U('Type/deleteaccount?id='.$vo['id']);?>">
 				<button type="buttn" class="btn btn-danger btn-xs">删除</button>
 				</a>
