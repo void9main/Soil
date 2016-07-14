@@ -51,7 +51,7 @@ class TypeController extends BaseController{
 				$this->error("操作有误",U("Type/addtype"),1);
 			}
 		}else{
-			if($state=="detail"){
+			if($state=="detail"){  							//查询已经存在的权限组信息
 				$type=M('type');
 				$detail=$type->where("id=".$id)->select();
 				$this->assign("detail",$detail);	
@@ -137,7 +137,7 @@ class TypeController extends BaseController{
 		$user=M('usergroup');
 		
 		
-		if($typenames!=""){						//离权
+		if($typenames!=""){						//TODO 离权
 				
 				$data=$user->where("`name`='$name'")->select();
 				$val['replenish']=str_replace(','.$typenames,'',$data[0]['replenish']);
@@ -178,6 +178,13 @@ class TypeController extends BaseController{
 				$this->assign("var",$var);
 				$this->display();
 		}
+	}
+	public  function deleteusergroup(){				//删除用户组
+		$id=I("get.id");
+		$type=M('usergroup');
+		
+		$type->where("`id`=".$id)->delete();
+		$this->redirect("Type/userlist");
 	}
 	/*
 	 * 行为组操作

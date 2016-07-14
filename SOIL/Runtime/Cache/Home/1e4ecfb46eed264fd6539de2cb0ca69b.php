@@ -126,7 +126,7 @@
 			</td>
 			<td><?php echo ($vo["replenish"]); ?></td>
 			<td>
-				<a href="<?php echo U('Type/deleteaccount?id='.$vo['id']);?>">
+				<a href="<?php echo U('Type/deleteusergroup?id='.$vo['id']);?>">
 				<button type="button" class="btn btn-danger btn-xs">删除</button>
 				</a>
 				<a href="<?php echo U('Type/accredit?name='.$vo['name']);?>">

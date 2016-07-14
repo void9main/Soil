@@ -123,7 +123,7 @@
 			<td><?php echo ($vo["condition"]); ?></td>
 			<td>
 				<a href="<?php echo U('Type/deleteaccount?id='.$vo['id']);?>">
-				<button type="button" class="btn btn-danger btn-xs">删除</button>
+				<button type="buttn" class="btn btn-danger btn-xs">删除</button>
 				</a>
 			</td>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>

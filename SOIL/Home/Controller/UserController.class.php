@@ -31,6 +31,7 @@ class UserController extends BaseController {
 		$data['name']=I("post.name");
 		$name['name']=$data['name'];
 		$data['typeid']=I("post.typeid");
+		$data['logid']=time().$data['name'];  			//日志链接
 		$pwd1=I("post.pwd1");
 		$pwd2=I("post.pwd2");
 		$db=M('usergroup');
