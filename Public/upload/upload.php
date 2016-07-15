@@ -86,6 +86,7 @@ if (isset($_REQUEST["md5"]) && array_search($_REQUEST["md5"], $md5File ) !== FAL
     die('{"jsonrpc" : "2.0", "result" : null, "id" : "id", "exist": 1}');
 }
 
+$fileName = iconv('UTF-8', 'GB2312', $fileName);//转编码
 $filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
 $uploadPath = $uploadDir . DIRECTORY_SEPARATOR . $fileName;
 

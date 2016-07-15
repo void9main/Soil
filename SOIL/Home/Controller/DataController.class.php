@@ -172,201 +172,40 @@ class DataController extends BaseController {
 			$this->display();
 		}
 	}
-	 public function csv(){				//csv文件的读取
-        if(is_post)
-        {
-            $DST_DIR = 'Public/Admin/upload/';  
-            if ($_FILES['file']['name'] != '') { 
-                if ($_FILES['file']['error'] > 0) {  
-                    echo "上传错误";  
-                }  
-                else {  
-                    if (move_uploaded_file($_FILES['file']['tmp_name'], $DST_DIR.$_FILES['file']['name'])) {  
-                        $rs="上传成功<br/><br/>";  
-                        $rs.="上传文件的名称 : ".$_FILES['file']["name"]."<br/>";//上传文件的文件名 
-                        $rs.="上传文件的类型 : ".$_FILES['file']["type"]."B<br/>";//上传文件的类型 
-                        $rs.="上传文件的大小 : ".$_FILES['file']["size"]."<br/>";//上传文件的大小 
-                        $rs.="上传文件的位置 : ".$DST_DIR."<br/>";//上传文件的位置
-                    }  
-                    else {  
-                        $rs=$DST_DIR.$_FILES['file']['name']."<br/>";
-                        $rs.="上传失败";  
-                    }  
-                }  
-            }  
-            else {  
-                $rs="请上传文件"; 
-            }
-
-        }
-        else
-        {
-            $rs="非法途径";
-        }
-
-        
-        $this->assign("r",$rs);
+	 public function csvin(){				//csv文件的读取
+	 	$this->left('data');
+		$kis=I("get.kis");
+       	$name=session('name');
+		if($kis=="find"){
+	   	$DRI_UP="Public/upload/".$name."/";
+	   	//文件上传地址
+	   	$filename=scandir($DRI_UP);
+			foreach($filename as $val){
+				if(substr($val,-4)==".csv"){
+					
+					$upfile=$val;			
+				}
+			}
+		//获取文件名
+		read_csv($DRI_UP.$upfile);
+		exit;
+		//处理文件
+		}
+	   	$this->assign("name",$name);
         $this->display();
     }
-    public function csvdir(){
-        $DST_DIR = 'Public/Admin/upload/';
-        $mydir = dir($DST_DIR); 
-        $drr=array();
-        $i=0;
-        while(($file = $mydir->read())!== false)
-        {
-            $i++;
-            if(!(is_dir("$directory/$file")) AND ($file!=".") AND ($file!="..")) 
-            {
-               $drr[$i][0]=$file;
-               $drr[$i][1]=$DST_DIR.$file;
-               $drr[$i][2]=str_replace("/", "-", $drr[$i][1]);
-            } 
-        } 
-        $mydir->close();
-        $this->assign("_list",$drr);
-        $this->display();
-    }
-
-    public function csvindb(){
-        header("Content-type:text/html;charset=utf-8");
-
-        $url=I('url');
-
-        
-
-
-        if($url)
-        {
-
-            $con = mysql_connect("localhost","root","");
-            if (!$con)
-            {
-                die('Could not connect: ' . mysql_error());
-            }
-            mysql_select_db("zhinong", $con);
-            mysql_query("set names 'utf8'");
-
-
-            // some code
-            $DST_DIR = 'Public/Admin/upload/';
-            
-            $name=str_replace(".csv", "", $url);
-            $table="zi_yearbook".$name;
-
-
-            $file= $DST_DIR.$url;
-            $handle=fopen($file,"r");
-
-            if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '".$table."'"))==1) 
-            {   
-                $log="";
-                $log.= "Table exists<br/>";
-            } 
-            else
-            {
-                $log.= "Table does not exist<br/>";
-                $log.= "创建表 : ".$table."<br/>";
-
-                $r=1;
-                while ($data = fgetcsv($handle,1000,",")) {
-                    $num=count($data);
-
-                    //var_dump($data); 
-                    //创建表
-                    //表头（第一行）数据不包含
-                    if($r==1)
-                    {
-                        $colr="";
-                        for($i=-1;$i<$num;$i++)
-                        {
-                            $data[$i]=trim($data[$i]);
-                            if($i==-1)
-                            {
-                                $col.="id int NOT NULL AUTO_INCREMENT,";
-                                $col.="PRIMARY KEY(id),";
-                                $log.="创建字段 : id<br/>";
-                            }
-                            elseif($i==$num-1)
-                            {
-                                $data[$i]=encode($data[$i]);
-                                $col.="`".$data[$i]."` text";
-                                $log.="创建字段 : ".$data[$i]."<br/>";
-                                $colr.="`".$data[$i]."`";
-                            }
-                            else
-                            {
-                                $data[$i]=encode($data[$i]);
-                                $col.="`".$data[$i]."` varchar(100),";
-                                $log.="创建字段 : ".$data[$i]."<br/>";
-                                $colr.="`".$data[$i]."`,";
-                            }
-                            
-                        }
-                        $sql="CREATE  TABLE ".$table."(".$col.")";
-                        trace($sql);
-                        $res=mysql_query($sql);
-                        if($res)
-                        {
-                            $log.=$table."-创建成功<br/>";
-                        }
-                        else
-                        {
-                            $log.=$table."-创建失败<br/>";
-                            //break;
-                        }
-                    }
-                    else
-                    {
-                        $sqli="";
-                        for($i=0;$i<$num;$i++)
-                        {
-                            $data[$i]=trim($data[$i]);
-                            if($i==$num-1)
-                            {
-                                $data[$i]=encode($data[$i]);
-                                $sqli.="'".$data[$i]."'";
-                                $log.=$data[$i]."<br/>";
-                            }
-                            elseif($i==0)
-                            {
-                                $data[$i]=encode($data[$i]);
-                                $sqli.="'".$data[$i]."',";
-                                $log.="录入：".$data[$i]." , ";
-                            }
-                            else
-                            {
-                                $data[$i]=encode($data[$i]);
-                                $sqli.="'".$data[$i]."',";
-                                $log.=$data[$i]." , ";
-                            }
-                        }
-                        $sql2="insert into `".$table."`(".$colr.") values (".$sqli.")";
-                        //trace($encode);
-                        //trace($sql2);
-                        mysql_query($sql2);
-                        
-                    }
-
-                    
-                   // var_dump($r);
-                    //var_dump($col);
-                    $r=$r+1;
-                }
-            }
-
-        }
-        else
-        {
-            $file="没有选择文件";
-            $rs="非法途径";
-        }
-        $encode = mb_detect_encoding($log, array("ASCII","UTF-8","GB2312","GBK","BIG5")); 
-        trace($encode);
-        //关闭连接
-        mysql_close($con);
-        fclose($handle);
-        $this->assign("r",$log);
-        $this->display();
-    }
+	public function upload(){
+    $upload = new \Think\Upload();// 实例化上传类
+    $upload->maxSize   =     3145728000 ;// 设置附件上传大小
+    $upload->exts      =     array('csv');// 设置附件上传类型
+    $upload->rootPath  =     './Public/upload/uploads/'; // 设置附件上传根目录
+    $upload->savePath  =     ''; // 设置附件上传（子）目录
+    // 上传文件 
+    $info   =   $upload->upload();
+    if(!$info) {// 上传错误提示错误信息
+	        $this->error($upload->getError());
+	    }else{// 上传成功
+	        $this->success('上传成功！');
+	    }
+	}
 }

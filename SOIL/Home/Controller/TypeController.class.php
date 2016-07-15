@@ -202,20 +202,35 @@ class TypeController extends BaseController{
 		
 		
 		if($ide!=""){				//添加
-			
-			
-			
-		}else if($ids!=""){			//移除
 			$move=$type->where("`typename`='$name'")->select();
-			$move['uid']=str_replace(','.$module,'',$move[0]['uid']);
-			$movel=$user->where("`id`='$ids'")->save($val);
-			//处理
-			if($var==1){
+			$id=$move[0]['id'];
+			//返回id值
+			$move['uid']='，'.$module.$move[0]['uid'];					   //中文切字符
+			$movel=$type->where("`typename`='$name'")->save($move);
+			//添加处理
+			
+			if($movel==1){
 					
-					$this->redirect("Type/addactionbytype?id='$ids'");
+					$this->redirect("Type/addactionbytype?id=".$id);
 				}else{
 					
-				$this->error("操作有误",U("Type/addactionbytype?id='$ids'"),1);
+				$this->error("操作有误",U("Type/addactionbytype?id=".$id),1);
+			}	
+			//跳转
+		}else if($ids!=""){			//移除
+			$move=$type->where("`typename`='$name'")->select();
+			$id=$move[0]['id'];
+			//返回id值
+			$move['uid']=str_replace('，'.$module,'',$move[0]['uid']);		//中文切字符
+			$movel=$type->where("`typename`='$name'")->save($move);
+			//移除处理
+			
+			if($movel==1){
+					
+					$this->redirect("Type/addactionbytype?id=".$id);
+				}else{
+					
+				$this->error("操作有误",U("Type/addactionbytype?id=".$id),1);
 			}	
 			//跳转
 		}else{

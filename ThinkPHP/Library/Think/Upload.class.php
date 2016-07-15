@@ -297,7 +297,7 @@ class Upload {
 
         /* 检查文件后缀 */
         if (!$this->checkExt($file['ext'])) {
-            $this->error = '上传文件后缀不允许';
+            $this->error = '文件类型错误';
             return false;
         }
 
