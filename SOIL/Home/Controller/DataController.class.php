@@ -174,38 +174,67 @@ class DataController extends BaseController {
 	}
 	 public function csvin(){				//csv文件的读取
 	 	$this->left('data');
-		$kis=I("get.kis");
-       	$name=session('name');
-		if($kis=="find"){
-	   	$DRI_UP="Public/upload/".$name."/";
+		$kis=I("post.kis");
+		$comment="";  						//TODO 备注
+		$time=time();
+		$date=date("Y-m-d");
+		
+		$DRI_UP="Public/upload/uploads/".$date."/";
 	   	//文件上传地址
-	   	$filename=scandir($DRI_UP);
+       	$name=session('name');
+		$time=time();
+		if($kis=="find"){
+		//判断按钮是否点击
+	    $upload = new \Think\Upload();							// 实例化上传类
+	    $upload->maxSize   =     3145728000 ;					// 设置附件上传大小
+	    $upload->exts      =     array('csv');					// 设置附件上传类型
+	    $upload->rootPath  =     './Public/upload/uploads/'; 	// 设置附件上传根目录
+	    $upload->savePath  =     ''; 							// 设置附件上传（子）目录
+	    $upload->saveName  =     $name.$time;
+	    
+	    $info   =   $upload->upload();
+	    if(!$info) {											// 上传错误提示错误信息
+		        $this->error($upload->getError());
+		    }else{												// 上传成功
+		    $filename=scandir($DRI_UP);
 			foreach($filename as $val){
 				if(substr($val,-4)==".csv"){
 					
 					$upfile=$val;			
+					}
 				}
+			
+			//获取文件名
+			$tablename="sj_".$name.$time;
+			//表名
+			$data=read_csv($DRI_UP.$upfile);
+
+			if($data!=""){
+				$sql_table="CREATE TABLE `$tablename` (
+		 		 `id` int(11) NOT NULL AUTO_INCREMENT,
+		  		PRIMARY KEY (`id`)
+				) ENGINE=MyISAM DEFAULT CHARSET='utf8' COMMENT='$comment'";
+				 M()->execute($sql_table,true);
+				 //创建表
+				 
+				foreach($data as $val){
+					$sql_word="ALTER TABLE  `$tablename` ADD  `$val` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL";
+					M()->execute($sql_word,true);	
+				//创建字段
+				}
+				
+				read_csv_content($DRI_UP.$upfile,$name.$time,$data);
+				//添加具体数据
 			}
-		//获取文件名
-		read_csv($DRI_UP.$upfile);
-		exit;
-		//处理文件
+			//文件存入到数据库
+			unlink($DRI_UP.$upfile);
+			$this->redirect('Data/index');
+			exit;
+			//处理文件
+			}
+			// 上传文件 
 		}
 	   	$this->assign("name",$name);
         $this->display();
     }
-	public function upload(){
-    $upload = new \Think\Upload();// 实例化上传类
-    $upload->maxSize   =     3145728000 ;// 设置附件上传大小
-    $upload->exts      =     array('csv');// 设置附件上传类型
-    $upload->rootPath  =     './Public/upload/uploads/'; // 设置附件上传根目录
-    $upload->savePath  =     ''; // 设置附件上传（子）目录
-    // 上传文件 
-    $info   =   $upload->upload();
-    if(!$info) {// 上传错误提示错误信息
-	        $this->error($upload->getError());
-	    }else{// 上传成功
-	        $this->success('上传成功！');
-	    }
-	}
 }
