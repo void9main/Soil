@@ -1,0 +1,21 @@
+<include file="Base:common-t" />
+    <!--body-->
+    <div class="content main-div" style="height:auto;width: 50%;">
+    	<ol class="breadcrumb">
+		  <li><a href="{:U('Index/index')}">首页</a></li>
+		  <li class="active">(csv)数据导入</li>
+		</ol>
+		<h4>上传文件区域</h4>
+		<div style="background-color: #F5F5F5">
+		<form action="{:U('Data/csvin')}" enctype="multipart/form-data" method="post" >
+			<input type="file" name="photo"/>
+			<input type="text" name="kis" value="find" style="display: none">
+			<br />
+			<div align="right">
+			<button type="submit" class="btn btn-info btn-sm">上传导入文件</button>
+			</div>
+		</form>
+		</div>
+    </div>
+    <!--body-->
+<include file="Base:common-f" />
