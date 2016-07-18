@@ -93,65 +93,7 @@
 		  <li><a href="<?php echo U('Index/index');?>">首页</a></li>
 		  <li class="active">勾架平台</li>
 		</ol>
-		<p>上传表格文件<?php echo ($test); ?></p>
-		<!--
-			文件上传插件
-        -->
-    	<div id="filelist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
-		<div id="container">
-		    <a id="pickfiles" href="javascript:;">[选择文件]</a> 
-		    <a id="uploadfiles" href="javascript:;">[上传文件]</a>
-		</div>
-    	<pre id="console"></pre>
-    	<!--
-    		文件上传插件
-       -->
-    </div>
-    <script type="text/javascript">
-		// 文件上传插件plupload插件js
-		var uploader = new plupload.Uploader({
-			runtimes : 'html5,flash,silverlight,html4',
-			browse_button : 'pickfiles', // you can pass in id...
-			container: document.getElementById('container'), // ... or DOM Element itself
-			url : '/soil/Public/upload/upload.php?name=<?php echo ($name); ?>',
-			flash_swf_url : '/soil/Public/upload/Moxie.swf',
-			silverlight_xap_url : '/soil/Public/upload/Moxie.xap',
-			
-			filters : {
-				max_file_size : '10mb',
-				mime_types: [
-					{title : "表格文件", extensions : "sql,xlsx,xls,csv"},
-					{title : "压缩文件", extensions : "zip"}
-				]
-			},
-		
-			init: {
-				PostInit: function() {
-					document.getElementById('filelist').innerHTML = '';
-		
-					document.getElementById('uploadfiles').onclick = function() {
-						uploader.start();
-						return false;
-					};
-				},
-		
-				FilesAdded: function(up, files) {
-					plupload.each(files, function(file) {
-						document.getElementById('filelist').innerHTML += '<div id="' + file.id + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') <b></b></div>';
-					});
-				},
-		
-				UploadProgress: function(up, file) {
-					document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
-				},
-		
-				Error: function(up, err) {
-					document.getElementById('console').innerHTML += "\nError #" + err.code + ": " + err.message;
-				}
-			}
-		});
-		uploader.init();
-</script>
+	</div>
     <!--body-->
 
 	</body>

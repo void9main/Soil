@@ -29,7 +29,7 @@
     <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
-    <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>
+    <a href="<?php echo U('Cloud/login');?>" type="button" class="btn btn-info" role="button">Soil云</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -94,9 +94,11 @@
 		  <li class="active">用户组管理</li>
 		</ol>
 		<div align="right" class="type-top-div">
+			<a href="<?php echo U('Type/adduserlist');?>">
 			<button type="button" class="btn btn-primary btn-sm">
 				新增组
 			</button>
+			</a>
 		</div>
 		<table class="table table-hover table-striped">
 		<tr>

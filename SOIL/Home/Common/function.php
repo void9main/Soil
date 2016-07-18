@@ -46,9 +46,7 @@
 	        $row ++;
 			
 	        for ($c=0;$c<$num;$c++){
-//	        	echo "<meta charset=\"utf-8\" />";
-//	            echo $data[$c+1];
-//				echo "<br />";
+
 				$content[$c+1]=$data[$c+1];
 	        }
 			$f=implode("','",$content);

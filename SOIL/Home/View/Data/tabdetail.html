@@ -1,11 +1,21 @@
 <include file="Base:common-t" />
     <!--body-->
-    <div class="content main-div " style="height:auto;">
+    <div class="content main-div " style="height:auto;width: 85%;">
     	<ol class="breadcrumb col-lg-12">
 		  <li><a href="{:U('Index/index')}">首页</a></li>
 		  <li><a href="{:U('Data/index')}">数据表单</a></li>
 		  <li class="active">分表详情</li>
 		</ol>
+		<div class="row">
+			<div class="col-lg-4">
+			    <div class="input-group">
+			      <input type="text" class="form-control">
+			      <span class="input-group-btn">
+			        <button class="btn btn-primary" type="button">搜索</button>
+			      </span>
+			    </div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div>
 		<h4>表：{$title}</h4>
 		<table class="table table-bordered" id="tab">
         <tr>
@@ -46,10 +56,23 @@
         </tr>
        </volist>
 		</table>
-		<ul class="pager">
-		  <li><a href="#">上一页</a></li>
-		  <li><a href="#">下一页</a></li>
+		<div align="center">
+		<ul class="pagination">
+			<li><a href="#">当前在<strong>{$page}</strong>页</a></li>
+			<li 
+				<if condition="$page eq 1">
+				 class="disabled"
+				</if>
+			>
+				<a href="{:U('data/tabdetail',array('page'=>$page-1,'name'=>$title))}">&laquo;</a>
+			</li>
+			<volist name="al" id="vo" offset="$PREV" length="10">
+				<li><a href="{:U('data/tabdetail',array('page'=>$vo,'name'=>$title))}">{$vo}</a></li>
+			</volist>
+			<li><a href="{:U('data/tabdetail',array('page'=>$page+1,'name'=>$title))}">&raquo;</a></li>
+			<li><a href="#">共有{$num}条数据</a></li>
 		</ul>
+		</div>
 		<div align="right">
 			<a href="{:U('Data/addfield',array('names'=>$title))}">
 			<button type="button" class="btn btn-success">增加字段</button>
@@ -58,6 +81,29 @@
     		<button type="button" class="btn btn-success">增加值</button>
     		</a>
     	</div>
+    	<br />
+    	<div id="to_top" align="right">
+    		<button type="button" class="btn btn-info btn-xs">
+    			↑
+    		</button>
+    	</div>
     </div>
+    <script>
+	window.onload = function(){
+	  var oTop = document.getElementById("to_top");
+	  var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+	  var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+	  oTop.style.left = screenw - oTop.offsetWidth +"px";
+	  oTop.style.top = screenh - oTop.offsetHeight + "px";
+	  window.onscroll = function(){
+	    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+	    oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+	  }
+	  oTop.onclick = function(){
+	    document.documentElement.scrollTop = document.body.scrollTop =0;
+	  }
+	}  
+	//转到顶部的js代码
+	</script>
     <!--body-->
 <include file="Base:common-f" />

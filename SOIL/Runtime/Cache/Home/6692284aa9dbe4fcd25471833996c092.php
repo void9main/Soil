@@ -29,7 +29,7 @@
     <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
-    <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>
+    <a href="<?php echo U('Cloud/login');?>" type="button" class="btn btn-info" role="button">Soil云</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,12 +88,22 @@
 	</script>
 </div>
     <!--body-->
-    <div class="content main-div " style="height:auto;">
+    <div class="content main-div " style="height:auto;width: 85%;">
     	<ol class="breadcrumb col-lg-12">
 		  <li><a href="<?php echo U('Index/index');?>">首页</a></li>
 		  <li><a href="<?php echo U('Data/index');?>">数据表单</a></li>
 		  <li class="active">分表详情</li>
 		</ol>
+		<div class="row">
+			<div class="col-lg-4">
+			    <div class="input-group">
+			      <input type="text" class="form-control">
+			      <span class="input-group-btn">
+			        <button class="btn btn-primary" type="button">搜索</button>
+			      </span>
+			    </div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div>
 		<h4>表：<?php echo ($title); ?></h4>
 		<table class="table table-bordered" id="tab">
         <tr>
@@ -124,10 +134,19 @@
 	        </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
-		<ul class="pager">
-		  <li><a href="#">上一页</a></li>
-		  <li><a href="#">下一页</a></li>
+		<div align="center">
+		<ul class="pagination">
+			<li><a href="#">当前在<strong><?php echo ($page); ?></strong>页</a></li>
+			<li 
+				<?php if($page == 1): ?>class="disabled"<?php endif; ?>
+			>
+				<a href="<?php echo U('data/tabdetail',array('page'=>$page-1,'name'=>$title));?>">&laquo;</a>
+			</li>
+			<?php if(is_array($al)): $i = 0; $__LIST__ = array_slice($al,$PREV,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('data/tabdetail',array('page'=>$vo,'name'=>$title));?>"><?php echo ($vo); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			<li><a href="<?php echo U('data/tabdetail',array('page'=>$page+1,'name'=>$title));?>">&raquo;</a></li>
+			<li><a href="#">共有<?php echo ($num); ?>条数据</a></li>
 		</ul>
+		</div>
 		<div align="right">
 			<a href="<?php echo U('Data/addfield',array('names'=>$title));?>">
 			<button type="button" class="btn btn-success">增加字段</button>
@@ -136,7 +155,30 @@
     		<button type="button" class="btn btn-success">增加值</button>
     		</a>
     	</div>
+    	<br />
+    	<div id="to_top" align="right">
+    		<button type="button" class="btn btn-info btn-xs">
+    			↑
+    		</button>
+    	</div>
     </div>
+    <script>
+	window.onload = function(){
+	  var oTop = document.getElementById("to_top");
+	  var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+	  var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+	  oTop.style.left = screenw - oTop.offsetWidth +"px";
+	  oTop.style.top = screenh - oTop.offsetHeight + "px";
+	  window.onscroll = function(){
+	    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+	    oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+	  }
+	  oTop.onclick = function(){
+	    document.documentElement.scrollTop = document.body.scrollTop =0;
+	  }
+	}  
+	//转到顶部的js代码
+	</script>
     <!--body-->
 
 	</body>

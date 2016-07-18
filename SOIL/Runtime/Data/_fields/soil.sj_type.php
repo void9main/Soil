@@ -1,1 +1,0 @@
-a:8:{i:0;s:2:"id";i:1;s:8:"typename";i:2;s:4:"time";i:3;s:5:"state";i:4;s:3:"dis";i:5;s:3:"uid";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:7:"int(11)";s:8:"typename";s:11:"varchar(50)";s:4:"time";s:9:"timestamp";s:5:"state";s:11:"varchar(50)";s:3:"dis";s:12:"varchar(255)";s:3:"uid";s:12:"varchar(255)";}}

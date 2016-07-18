@@ -29,7 +29,7 @@
     <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
-    <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>
+    <a href="<?php echo U('Cloud/login');?>" type="button" class="btn btn-info" role="button">Soil云</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -99,7 +99,7 @@
         <th>表格</th>
         <th>表格类型</th>
         <th>创建时间</th>
-        <th>最后更新时间</th>
+        <!--<th>最后更新时间</th>-->
         <th>校对字符集</th>
         <th>表单备注</th>
         <th>行格式</th>
@@ -116,7 +116,7 @@
         </td>
         <td><?php echo ($vo["engine"]); ?></td>
         <td><?php echo ($vo["create_time"]); ?></td>
-        <td><?php echo ($vo["update_time"]); ?></td>
+        <!--<td><?php echo ($vo["update_time"]); ?></td>-->
         <td><?php echo ($vo["collation"]); ?></td>
         <td><?php echo ($vo["comment"]); ?></td>
         <td><?php echo ($vo["row_format"]); ?></td>

@@ -74,6 +74,10 @@ class DataController extends BaseController {
 	public function tabdetail(){        	 //表详情
 		$name1=I("get.name");
 		$this->left('data');
+		$page=I('get.page');
+
+		$PAGE_NUM=10;
+		$NEXT=10;
 		if($name1!=""){
 		$var=explode("_", $name1);
 		$sql="SELECT
@@ -82,13 +86,34 @@ class DataController extends BaseController {
 		FROM information_schema.COLUMNS WHERE TABLE_NAME='$name1'";
 		$comment= M()->query($sql,true);
 		
-		
 		$db=M($var[1]);
-		
-		$name=$db->getDbFields();
-		$var=$db->select();
 
+		$name=$db->getDbFields();
 		
+		$vae=$db->select();
+		$num=count($vae);
+		for($i=1;$i<=($num/10);$i++){
+			$list[$i]=$i;
+		}
+		//总数量
+		if($page==""){
+			$PREV=0;
+		}else{
+			$PREV=($page-1)*$PAGE_NUM;
+		}
+		//数据分页提取
+		if(floor($page/10)!=0){
+			$PREV_NUM=floor($page/10)*10;
+		}else{
+			$PREV_NUM=0;
+		}
+		//分页起始数
+		$var=$db->limit($PREV,$NEXT)->select();
+		
+		$this->assign("page",$page);
+		$this->assign("PREV",$PREV_NUM);
+		$this->assign("al",$list);
+		$this->assign("num",$num);
 		$this->assign("title",$name1);
 		$this->assign("comment",$comment);
 		$this->assign("name",$name);
@@ -218,7 +243,7 @@ class DataController extends BaseController {
 				 //创建表
 				 
 				foreach($data as $val){
-					$sql_word="ALTER TABLE  `$tablename` ADD  `$val` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL";
+					$sql_word="ALTER TABLE  `$tablename` ADD  `$val` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL";
 					M()->execute($sql_word,true);	
 				//创建字段
 				}

@@ -29,7 +29,7 @@
     <a href="<?php echo U('Common/index');?>" type="button" class="btn btn-success" role="button">公共系统</a>
     <?php if(is_array($top)): $i = 0; $__LIST__ = $top;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/soil/index.php/Home/<?php echo ($vo["url"]); ?>" type="button" class="btn btn-success"  role="button"><?php echo ($vo["list"]); ?></a>
     &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
-    <a href="<?php echo U('Index/index');?>" type="button" class="btn btn-info" role="button">Soil云</a>
+    <a href="<?php echo U('Cloud/login');?>" type="button" class="btn btn-info" role="button">Soil云</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -95,7 +95,7 @@
 		  <li class="active">增加值</li>
 		</ol>
 		<form  method="post" action="<?php echo U('Data/adddetail',array('namee'=>$title));?>">
-		<?php $__FOR_START_31965__=0;$__FOR_END_31965__=$count;for($i=$__FOR_START_31965__;$i < $__FOR_END_31965__;$i+=1){ ?><div class="form-group">
+		<?php $__FOR_START_25422__=0;$__FOR_END_25422__=$count;for($i=$__FOR_START_25422__;$i < $__FOR_END_25422__;$i+=1){ ?><div class="form-group">
 		    <label for="exampleInputEmail1"><?php echo ($name[$i]); ?>-----属性值：<?php echo ($nature[$i]['type']); ?></label>
 		    <?php if($nature[$i]['type'] == 'text' ): ?><textarea class="form-control" rows="4" name="<?php echo ($name[$i]); ?>" placeholder="<?php echo ($nature[$i]['comment']); ?>">
 		    	<?php echo ($nature[$i]['comment']); ?>

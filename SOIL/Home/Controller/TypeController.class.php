@@ -115,14 +115,6 @@ class TypeController extends BaseController{
 	/*
 	 * 用户组操作
 	 */
-	public function userlist(){			//用户组列表
-		$this->left('type');
-		$type=M('usergroup');
-		$data=$type->select();
-		
-		$this->assign('data',$data);
-		$this->display();
-	}
 	public function usertype(){	
 		$id=I("get.id");
 		$name=I("get.name");
@@ -246,6 +238,18 @@ class TypeController extends BaseController{
 		$this->assign("data",$data);
 		$this->display();
 		}
+	}
+	public function userlist(){			//用户组列表
+		$this->left('type');
+		$type=M('usergroup');
+		$data=$type->select();
+
+		$this->assign('data',$data);
+		$this->display();
+	}
+	public function adduserlist(){		//添加用户组
+		$this->left('type');
+		$this->display();
 	}
 	/*
 	 * 行为组操作
