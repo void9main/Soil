@@ -8,44 +8,72 @@
 		</ol>
 		<div class="row">
 			<div class="col-lg-4">
+				<form action="{:U('Data/tabdetail',array('name'=>$title))}" method="post">
 			    <div class="input-group">
-			      <input type="text" class="form-control">
 			      <span class="input-group-btn">
-			        <button class="btn btn-primary" type="button">搜索</button>
+			       <select class="form-control" name="find" id="type" style="width:130px;">
+						<volist name="name" id="vo">
+			         	<option>{$vo}</option>
+		         		</volist>
+		    		</select>
+		    		<select class="form-control" name="choose" id="type" style="width:108px;">
+			         	<option>匹配搜索</option>
+		         		<option>模糊搜索</option>
+		    		</select>
+		    		<input type="text" class="form-control " name="search">
+			       	<button class="btn btn-primary" type="submit">搜索</button>
 			      </span>
 			    </div><!-- /input-group -->
+			    </form>
 			</div><!-- /.col-lg-6 -->
 		</div>
-		<h4>表：{$title}</h4>
+		<h4>表：
+			<a href="{:U('Data/tabdetail',array('name'=>$title))}">
+			{$title}
+			</a>
+			<if condition="$search neq ''">
+				<div align="center">
+					<ul class="pagination">
+						<li><a href="#">共查询到{$num}条结果</a></li>
+						<!--<li><a href="#">删除所有查询结果</a></li>-->
+					</ul>
+				</div>
+			</if>
+			<div align="right">
+			<a href="{:U('Data/addfield',array('names'=>$title))}">
+			<button type="button" class="btn btn-success">增加字段</button>
+			</a>
+			<a href="{:U('Data/adddetail',array('names'=>$title))}">
+    		<button type="button" class="btn btn-success">增加值</button>
+    		</a>
+	    	</div>
+	    	<small>字段过多的情况下,只截取前10个字段显示</small>
+		</h4>
 		<table class="table table-bordered" id="tab">
         <tr>
         <td>字段名称</td>
-        <volist name="name" id="vo">
-			<td><strong>{$vo}</strong></td>
-		</volist>
-		<td>
+        <td>
 			操作
 		</td>
+        <volist name="name" id="vo" offset="0" length="10">
+			<td><strong>{$vo}</strong></td>
+		</volist>
+		
         </tr>
         <tr>
         <td>字段备注</td>
-        <volist name="comment" id="vo1">
+        <volist name="comment" id="vo1" offset="0" length="10">
 			<td>{$vo1.备注}</td>
 		</volist>
         </tr>
 	    <volist name="data" id="vo2">
 	    <tr>
 	        <td>#值#</td>
-	        <volist name="name" id="vo">
-	        <td>
-	        	{$vo2.$vo}
-	        </td> 
-	        </volist>   
 	        <td>
 	        	<if condition="vo2.id eq ''">
 	        	<button type="button" class="btn btn-success btn-xs">保存</button>
 	        	<else />
-	        	<a href="{:U('Data/adddetail',array('id'=>$id))}">
+	        	<a href="{:U('Data/adddetail',array('id'=>$vo2['id'],'names'=>$title))}">
 	        	<button type="button" class="btn btn-success btn-xs">修改</button>
 	        	</a>
 	        	<a href="{:U('Data/deletedata',array('id'=>$vo2['id'],'name'=>$title))}">
@@ -53,11 +81,18 @@
 	        	</a>
 	        	</if>
 	        </td>
+	        <volist name="name" id="vo" offset="0" length="10">
+	        <td>
+	        	{$vo2.$vo}
+	        </td> 
+	        </volist>   
+	        
         </tr>
        </volist>
 		</table>
 		<div align="center">
 		<ul class="pagination">
+			<if condition="$search eq ''">
 			<li><a href="#">当前在<strong>{$page}</strong>页</a></li>
 			<li 
 				<if condition="$page eq 1">
@@ -71,16 +106,10 @@
 			</volist>
 			<li><a href="{:U('data/tabdetail',array('page'=>$page+1,'name'=>$title))}">&raquo;</a></li>
 			<li><a href="#">共有{$num}条数据</a></li>
+			</if>
 		</ul>
 		</div>
-		<div align="right">
-			<a href="{:U('Data/addfield',array('names'=>$title))}">
-			<button type="button" class="btn btn-success">增加字段</button>
-			</a>
-			<a href="{:U('Data/adddetail',array('names'=>$title))}">
-    		<button type="button" class="btn btn-success">增加值</button>
-    		</a>
-    	</div>
+		
     	<br />
     	<div id="to_top" align="right">
     		<button type="button" class="btn btn-info btn-xs">

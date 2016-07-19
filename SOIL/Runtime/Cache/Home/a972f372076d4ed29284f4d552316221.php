@@ -130,7 +130,7 @@
         	<a href="<?php echo U('Data/delete_tab',array('name'=>$vo['name']));?>">
         	<button type="button" class="btn btn-danger btn-xs">删除表</button>
         	</a>
-        	<?php if($vo["row_format"] == Fixed): ?><a href="<?php echo U('Data/change_row_fom',array('name'=>$vo['name']));?>">
+        	<?php if($vo["row_format"] != Dynamic): ?><a href="<?php echo U('Data/change_row_fom',array('name'=>$vo['name']));?>">
         	<button type="button" class="btn btn-danger btn-xs">动态行替换</button>
         	</a><?php endif; ?>
         </td>

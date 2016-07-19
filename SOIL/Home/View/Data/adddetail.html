@@ -4,9 +4,14 @@
     	<ol class="breadcrumb col-lg-12">
 		  <li><a href="{:U('Index/index')}">首页</a></li>
 		  <li><a href="{:U('Data/index')}">数据表单</a></li>
+		  <li><a href="{:U('Data/tabdetail',array('name'=>$title))}">返回</a></li>
 		  <li class="active">增加值</li>
 		</ol>
-		<form  method="post" action="{:U('Data/adddetail',array('namee'=>$title))}">
+		<if condition="$content[0]['id'] neq ''">
+			<form  method="post" action="{:U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']))}">
+		<else />
+		  	<form  method="post" action="{:U('Data/adddetail',array('namee'=>$title))}">
+		</if>
 		<for start="0" end="$count">
 			
 		
@@ -17,7 +22,7 @@
 		    	{$nature[$i]['comment']}
 		    </textarea>
 		    <else />
-		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{$nature[$i]['comment']}" name="{$name[$i]}" 		    	
+		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{$nature[$i]['comment']}" name="{$name[$i]}" 	value="{$content[0][$name[$i]]}"	    	
 		    <if condition="($nature[$i]['default'] neq '') OR ($name[$i] eq 'id')">
 		    	readonly
 		    </if>>
@@ -27,7 +32,11 @@
 		  
 		</for>
 		<div align="right">
-		  	<button type="submit" class="btn btn-primary">添加</button>
+			<if condition="$content[0]['id'] neq ''">
+				<button type="submit" class="btn btn-success">修改</button>
+			<else />
+		  		<button type="submit" class="btn btn-primary">添加</button>
+		  	</if>
 		</div>
 		</form>
     </div>

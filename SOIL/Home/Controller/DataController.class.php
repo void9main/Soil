@@ -74,23 +74,45 @@ class DataController extends BaseController {
 	public function tabdetail(){        	 //表详情
 		$name1=I("get.name");
 		$this->left('data');
+		//公共方法
 		$page=I('get.page');
+		//页数
+		$choose=I('post.choose');
+		//获取搜索条件
+		$find=I('post.find');
+		//获取搜索状态
+		$search=trim(I('post.search'));
+		//获取搜索值
 
 		$PAGE_NUM=10;
 		$NEXT=10;
+		//固定常量
+		
 		if($name1!=""){
 		$var=explode("_", $name1);
+		
 		$sql="SELECT
 		COLUMN_NAME,
 		COLUMN_COMMENT  AS  `备注`
-		FROM information_schema.COLUMNS WHERE TABLE_NAME='$name1'";
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='$name1'";			
+
 		$comment= M()->query($sql,true);
 		
 		$db=M($var[1]);
 
 		$name=$db->getDbFields();
-		
-		$vae=$db->select();
+		//字段名称
+		if($find==""){
+				
+			$vae=$db->select();												//直接输出结果
+		}else{
+			if($choose=="匹配搜索"){	
+				$vae=$db->where("`$find`='$search'")->select();						//带有查找性质的查询输出
+			}else if($choose=="模糊搜索"){
+				$vae=$db->where("`$find` LIKE '%$search%'")->select();						//带有查找性质的查询输出
+			}
+		}
+
 		$num=count($vae);
 		for($i=1;$i<=($num/10);$i++){
 			$list[$i]=$i;
@@ -108,8 +130,19 @@ class DataController extends BaseController {
 			$PREV_NUM=0;
 		}
 		//分页起始数
-		$var=$db->limit($PREV,$NEXT)->select();
-		
+		if($find==""){
+			$var=$db->limit($PREV,$NEXT)->select();
+			//直接输出
+		}else{
+			if($choose=="匹配搜索"){
+				$var=$db->where("`$find`='$search'")->select();
+			}else if($choose=="模糊搜索"){
+				$var=$db->where("`$find` LIKE '%$search%'")->select();
+			}
+			//搜索输出
+			$this->assign("search","ok");
+			//搜索状态供前台if判断
+		}
 		$this->assign("page",$page);
 		$this->assign("PREV",$PREV_NUM);
 		$this->assign("al",$list);
@@ -121,6 +154,8 @@ class DataController extends BaseController {
 		$this->display();
 		}
 	}
+
+
 	public function deletedata(){        	//删除值
 		$id=I("get.id");
 		$name=I("get.name");
@@ -137,9 +172,12 @@ class DataController extends BaseController {
 	public function adddetail(){			//增加值
 		$names=I("get.names");				//获取表名
 		$namee=I("get.namee");
+		$namef=I("get.namef");
+		$id=I("get.id");
 		$data=I('post.');                   //批量获取
-		
 		$this->left('data');
+		
+		
 		if($names!=""){
 			$var=explode("_", $names);
 			$db=M($var[1]);
@@ -149,11 +187,15 @@ class DataController extends BaseController {
 			$count=count($name);
 
 			$nature=M()->query($sql,true);
-			
+			if($id!=""){
+			$content=$db->where("id=".$id)->select();
+			}
+			//获取值
 			$this->assign("count",$count);
 			$this->assign("nature",$nature);
 			$this->assign("name",$name);
 			$this->assign("title",$names);
+			$this->assign("content",$content);
 			
 			$this->display();
 		}else if($namee!=""){
@@ -165,6 +207,16 @@ class DataController extends BaseController {
 				$this->redirect('Data/tabdetail?name='.$namee);
 			}else{
 				$this->error("操作有误",U("'Data/tabdetail?name='.$namee"),1);
+			}
+		}else if($namef!=""){
+			$var=explode("_", $namef);
+			$db=M($var[1]);
+			
+			$var1=$db->where("id=".$id)->save($data);
+			if($var1!=0){
+				$this->redirect('Data/tabdetail?name='.$namef);
+			}else{
+				$this->error("操作有误",U("'Data/tabdetail?name='.$namef"),1);
 			}
 		}
 	}
@@ -182,7 +234,7 @@ class DataController extends BaseController {
 		
 		$sql="ALTER TABLE  `$names` ADD  `$title` $type NOT NULL DEFAULT  '$default' COMMENT  '$comment' AFTER  `$after`";
 		$var= M()->execute($sql,true);
-		if($var==0){
+		if($var!=0){
 				$this->redirect('Data/tabdetail?name='.$names);
 			}else{
 				$this->error("操作有误",U('Data/tabdetail?name='.$names),1);

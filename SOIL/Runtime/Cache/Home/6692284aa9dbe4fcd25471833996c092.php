@@ -96,47 +96,77 @@
 		</ol>
 		<div class="row">
 			<div class="col-lg-4">
+				<form action="<?php echo U('Data/tabdetail',array('name'=>$title));?>" method="post">
 			    <div class="input-group">
-			      <input type="text" class="form-control">
 			      <span class="input-group-btn">
-			        <button class="btn btn-primary" type="button">搜索</button>
+			       <select class="form-control" name="find" id="type" style="width:130px;">
+						<?php if(is_array($name)): $i = 0; $__LIST__ = $name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option><?php echo ($vo); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+		    		</select>
+		    		<select class="form-control" name="choose" id="type" style="width:108px;">
+			         	<option>匹配搜索</option>
+		         		<option>模糊搜索</option>
+		    		</select>
+		    		<input type="text" class="form-control " name="search">
+			       	<button class="btn btn-primary" type="submit">搜索</button>
 			      </span>
 			    </div><!-- /input-group -->
+			    </form>
 			</div><!-- /.col-lg-6 -->
 		</div>
-		<h4>表：<?php echo ($title); ?></h4>
+		<h4>表：
+			<a href="<?php echo U('Data/tabdetail',array('name'=>$title));?>">
+			<?php echo ($title); ?>
+			</a>
+			<?php if($search != ''): ?><div align="center">
+					<ul class="pagination">
+						<li><a href="#">共查询到<?php echo ($num); ?>条结果</a></li>
+						<!--<li><a href="#">删除所有查询结果</a></li>-->
+					</ul>
+				</div><?php endif; ?>
+			<div align="right">
+			<a href="<?php echo U('Data/addfield',array('names'=>$title));?>">
+			<button type="button" class="btn btn-success">增加字段</button>
+			</a>
+			<a href="<?php echo U('Data/adddetail',array('names'=>$title));?>">
+    		<button type="button" class="btn btn-success">增加值</button>
+    		</a>
+	    	</div>
+	    	<small>字段过多的情况下,只截取前10个字段显示</small>
+		</h4>
 		<table class="table table-bordered" id="tab">
         <tr>
         <td>字段名称</td>
-        <?php if(is_array($name)): $i = 0; $__LIST__ = $name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td><strong><?php echo ($vo); ?></strong></td><?php endforeach; endif; else: echo "" ;endif; ?>
-		<td>
+        <td>
 			操作
 		</td>
+        <?php if(is_array($name)): $i = 0; $__LIST__ = array_slice($name,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td><strong><?php echo ($vo); ?></strong></td><?php endforeach; endif; else: echo "" ;endif; ?>
+		
         </tr>
         <tr>
         <td>字段备注</td>
-        <?php if(is_array($comment)): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><td><?php echo ($vo1["备注"]); ?></td><?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php if(is_array($comment)): $i = 0; $__LIST__ = array_slice($comment,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><td><?php echo ($vo1["备注"]); ?></td><?php endforeach; endif; else: echo "" ;endif; ?>
         </tr>
 	    <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><tr>
 	        <td>#值#</td>
-	        <?php if(is_array($name)): $i = 0; $__LIST__ = $name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td>
-	        	<?php echo ($vo2["$vo"]); ?>
-	        </td><?php endforeach; endif; else: echo "" ;endif; ?>   
 	        <td>
 	        	<?php if(vo2.id == ''): ?><button type="button" class="btn btn-success btn-xs">保存</button>
 	        	<?php else: ?>
-	        	<a href="<?php echo U('Data/adddetail',array('id'=>$id));?>">
+	        	<a href="<?php echo U('Data/adddetail',array('id'=>$vo2['id'],'names'=>$title));?>">
 	        	<button type="button" class="btn btn-success btn-xs">修改</button>
 	        	</a>
 	        	<a href="<?php echo U('Data/deletedata',array('id'=>$vo2['id'],'name'=>$title));?>">
 	        	<button type="button" class="btn btn-danger btn-xs">删除</button>
 	        	</a><?php endif; ?>
 	        </td>
+	        <?php if(is_array($name)): $i = 0; $__LIST__ = array_slice($name,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td>
+	        	<?php echo ($vo2["$vo"]); ?>
+	        </td><?php endforeach; endif; else: echo "" ;endif; ?>   
+	        
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
 		<div align="center">
 		<ul class="pagination">
-			<li><a href="#">当前在<strong><?php echo ($page); ?></strong>页</a></li>
+			<?php if($search == ''): ?><li><a href="#">当前在<strong><?php echo ($page); ?></strong>页</a></li>
 			<li 
 				<?php if($page == 1): ?>class="disabled"<?php endif; ?>
 			>
@@ -144,17 +174,10 @@
 			</li>
 			<?php if(is_array($al)): $i = 0; $__LIST__ = array_slice($al,$PREV,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('data/tabdetail',array('page'=>$vo,'name'=>$title));?>"><?php echo ($vo); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			<li><a href="<?php echo U('data/tabdetail',array('page'=>$page+1,'name'=>$title));?>">&raquo;</a></li>
-			<li><a href="#">共有<?php echo ($num); ?>条数据</a></li>
+			<li><a href="#">共有<?php echo ($num); ?>条数据</a></li><?php endif; ?>
 		</ul>
 		</div>
-		<div align="right">
-			<a href="<?php echo U('Data/addfield',array('names'=>$title));?>">
-			<button type="button" class="btn btn-success">增加字段</button>
-			</a>
-			<a href="<?php echo U('Data/adddetail',array('names'=>$title));?>">
-    		<button type="button" class="btn btn-success">增加值</button>
-    		</a>
-    	</div>
+		
     	<br />
     	<div id="to_top" align="right">
     		<button type="button" class="btn btn-info btn-xs">

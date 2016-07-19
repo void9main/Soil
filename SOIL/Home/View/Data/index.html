@@ -45,7 +45,7 @@
         	<a href="{:U('Data/delete_tab',array('name'=>$vo['name']))}">
         	<button type="button" class="btn btn-danger btn-xs">删除表</button>
         	</a>
-        	<if condition="$vo.row_format eq Fixed">
+        	<if condition="$vo.row_format neq Dynamic">
         	<a href="{:U('Data/change_row_fom',array('name'=>$vo['name']))}">
         	<button type="button" class="btn btn-danger btn-xs">动态行替换</button>
         	</a>
