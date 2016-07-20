@@ -15,6 +15,8 @@ return array(
     'DB_CHARSET'            => 'utf8',      // 数据库编码默认采用utf8
     'DB_DEPLOY_TYPE'        => 0, // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)
     'DB_RW_SEPARATE'        => false,       // 数据库读写是否分离 主从式有效
+    'DB_FIELDS_CACHE'		=>false,		//关闭字段缓存，true为打开（默认）
+    'DB_BACKUP'             =>"/Public/backup/", //数据库备份地址
      /* 模板相关配置 */
     'TMPL_PARSE_STRING' => array(
         '__IMAGE__'    => __ROOT__ . '/Public/image',
@@ -29,4 +31,5 @@ return array(
     'DB_FIELD_CACHE'        =>  false,
     'URL_HTML_SUFFIX' => 'html',
     "ERROR_PAGE"     =>'/Home/Index/404.html',
+    
 );

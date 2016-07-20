@@ -5,7 +5,6 @@
 		  <li><a href="{:U('Index/index')}">首页</a></li>
 		  <li class="active">数据表单</li>
 		</ol>
-		
     	<table class="table table-striped" id="tab">
         <tr>
         <th>表格</th>
@@ -53,10 +52,13 @@
         </td>
         </tr>
         </volist>
-		</table>
+		</table>	
+		<div align="right">
 		<a href="{:U('Data/addtab')}">
 		<button type="button" name="add_td" class="btn btn-primary">创建新表格</button>
 		</a>
+		<!--<a href="{:U('Base/dataBak')}"><button type="button" class="btn btn-success">数据库备份</button></a>-->
+		</div>
     </div>
     <!--body-->
 <include file="Base:common-f" />

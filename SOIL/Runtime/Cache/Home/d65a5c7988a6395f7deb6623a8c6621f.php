@@ -40,8 +40,8 @@
       </div>
       <button type="submit" class="btn btn-primary">全局搜索</button>
     
-    <a href="<?php echo U('Set/index');?>">
-      <button type="button" class="btn btn-primary">设置</button>
+    <a href="<?php echo U('Index/index/index');?>">
+      <button type="button" class="btn btn-primary">前台</button>
     </a>
     <a href="">
       <button type="button" class="btn btn-primary">日志</button>

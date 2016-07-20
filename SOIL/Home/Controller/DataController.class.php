@@ -83,7 +83,7 @@ class DataController extends BaseController {
 		//获取搜索状态
 		$search=trim(I('post.search'));
 		//获取搜索值
-
+		
 		$PAGE_NUM=10;
 		$NEXT=10;
 		//固定常量
@@ -314,4 +314,7 @@ class DataController extends BaseController {
 	   	$this->assign("name",$name);
         $this->display();
     }
+	/*
+	 * 备份表
+	 */
 }

@@ -35,7 +35,7 @@
 				<div align="center">
 					<ul class="pagination">
 						<li><a href="#">共查询到{$num}条结果</a></li>
-						<!--<li><a href="#">删除所有查询结果</a></li>-->
+						<!--<li><a href="{:U('Data/tabdetail',array('out'=>'out'))}">导出查询数据</a></li>-->
 					</ul>
 				</div>
 			</if>
@@ -52,13 +52,12 @@
 		<table class="table table-bordered" id="tab">
         <tr>
         <td>字段名称</td>
-        <td>
-			操作
-		</td>
         <volist name="name" id="vo" offset="0" length="10">
 			<td><strong>{$vo}</strong></td>
 		</volist>
-		
+		<td>
+			操作
+		</td>
         </tr>
         <tr>
         <td>字段备注</td>
@@ -69,6 +68,11 @@
 	    <volist name="data" id="vo2">
 	    <tr>
 	        <td>#值#</td>
+	        <volist name="name" id="vo" offset="0" length="10">
+	        <td>
+	        	{$vo2.$vo}
+	        </td> 
+	        </volist>   
 	        <td>
 	        	<if condition="vo2.id eq ''">
 	        	<button type="button" class="btn btn-success btn-xs">保存</button>
@@ -81,12 +85,6 @@
 	        	</a>
 	        	</if>
 	        </td>
-	        <volist name="name" id="vo" offset="0" length="10">
-	        <td>
-	        	{$vo2.$vo}
-	        </td> 
-	        </volist>   
-	        
         </tr>
        </volist>
 		</table>
@@ -109,14 +107,13 @@
 			</if>
 		</ul>
 		</div>
-		
     	<br />
     	<div id="to_top" align="right">
-    		<button type="button" class="btn btn-info btn-xs">
-    			↑
-    		</button>
-    	</div>
-    </div>
+    	<button type="button" class="btn btn-info btn-xs">
+    		↑
+    	</button>
+   		</div>
+   	</div>
     <script>
 	window.onload = function(){
 	  var oTop = document.getElementById("to_top");

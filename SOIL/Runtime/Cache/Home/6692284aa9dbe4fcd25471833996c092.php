@@ -40,8 +40,8 @@
       </div>
       <button type="submit" class="btn btn-primary">全局搜索</button>
     
-    <a href="<?php echo U('Set/index');?>">
-      <button type="button" class="btn btn-primary">设置</button>
+    <a href="<?php echo U('Index/index/index');?>">
+      <button type="button" class="btn btn-primary">前台</button>
     </a>
     <a href="">
       <button type="button" class="btn btn-primary">日志</button>
@@ -120,7 +120,7 @@
 			<?php if($search != ''): ?><div align="center">
 					<ul class="pagination">
 						<li><a href="#">共查询到<?php echo ($num); ?>条结果</a></li>
-						<!--<li><a href="#">删除所有查询结果</a></li>-->
+						<!--<li><a href="<?php echo U('Data/tabdetail',array('out'=>'out'));?>">导出查询数据</a></li>-->
 					</ul>
 				</div><?php endif; ?>
 			<div align="right">
@@ -136,11 +136,10 @@
 		<table class="table table-bordered" id="tab">
         <tr>
         <td>字段名称</td>
-        <td>
+        <?php if(is_array($name)): $i = 0; $__LIST__ = array_slice($name,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td><strong><?php echo ($vo); ?></strong></td><?php endforeach; endif; else: echo "" ;endif; ?>
+		<td>
 			操作
 		</td>
-        <?php if(is_array($name)): $i = 0; $__LIST__ = array_slice($name,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td><strong><?php echo ($vo); ?></strong></td><?php endforeach; endif; else: echo "" ;endif; ?>
-		
         </tr>
         <tr>
         <td>字段备注</td>
@@ -148,6 +147,9 @@
         </tr>
 	    <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><tr>
 	        <td>#值#</td>
+	        <?php if(is_array($name)): $i = 0; $__LIST__ = array_slice($name,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td>
+	        	<?php echo ($vo2["$vo"]); ?>
+	        </td><?php endforeach; endif; else: echo "" ;endif; ?>   
 	        <td>
 	        	<?php if(vo2.id == ''): ?><button type="button" class="btn btn-success btn-xs">保存</button>
 	        	<?php else: ?>
@@ -158,10 +160,6 @@
 	        	<button type="button" class="btn btn-danger btn-xs">删除</button>
 	        	</a><?php endif; ?>
 	        </td>
-	        <?php if(is_array($name)): $i = 0; $__LIST__ = array_slice($name,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td>
-	        	<?php echo ($vo2["$vo"]); ?>
-	        </td><?php endforeach; endif; else: echo "" ;endif; ?>   
-	        
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
 		<div align="center">
@@ -177,14 +175,13 @@
 			<li><a href="#">共有<?php echo ($num); ?>条数据</a></li><?php endif; ?>
 		</ul>
 		</div>
-		
     	<br />
     	<div id="to_top" align="right">
-    		<button type="button" class="btn btn-info btn-xs">
-    			↑
-    		</button>
-    	</div>
-    </div>
+    	<button type="button" class="btn btn-info btn-xs">
+    		↑
+    	</button>
+   		</div>
+   	</div>
     <script>
 	window.onload = function(){
 	  var oTop = document.getElementById("to_top");

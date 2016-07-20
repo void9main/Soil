@@ -40,8 +40,8 @@
       </div>
       <button type="submit" class="btn btn-primary">全局搜索</button>
     
-    <a href="<?php echo U('Set/index');?>">
-      <button type="button" class="btn btn-primary">设置</button>
+    <a href="<?php echo U('Index/index/index');?>">
+      <button type="button" class="btn btn-primary">前台</button>
     </a>
     <a href="">
       <button type="button" class="btn btn-primary">日志</button>
@@ -98,7 +98,7 @@
 		<?php if($content[0]['id'] != ''): ?><form  method="post" action="<?php echo U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']));?>">
 		<?php else: ?>
 		  	<form  method="post" action="<?php echo U('Data/adddetail',array('namee'=>$title));?>"><?php endif; ?>
-		<?php $__FOR_START_8458__=0;$__FOR_END_8458__=$count;for($i=$__FOR_START_8458__;$i < $__FOR_END_8458__;$i+=1){ ?><div class="form-group">
+		<?php $__FOR_START_3885__=0;$__FOR_END_3885__=$count;for($i=$__FOR_START_3885__;$i < $__FOR_END_3885__;$i+=1){ ?><div class="form-group">
 		    <label for="exampleInputEmail1"><?php echo ($name[$i]); ?>-----属性值：<?php echo ($nature[$i]['type']); ?></label>
 		    <?php if($nature[$i]['type'] == 'text' ): ?><textarea class="form-control" rows="4" name="<?php echo ($name[$i]); ?>" placeholder="<?php echo ($nature[$i]['comment']); ?>">
 		    	<?php echo ($nature[$i]['comment']); ?>

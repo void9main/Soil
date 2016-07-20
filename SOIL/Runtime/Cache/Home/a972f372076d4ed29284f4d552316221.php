@@ -40,8 +40,8 @@
       </div>
       <button type="submit" class="btn btn-primary">全局搜索</button>
     
-    <a href="<?php echo U('Set/index');?>">
-      <button type="button" class="btn btn-primary">设置</button>
+    <a href="<?php echo U('Index/index/index');?>">
+      <button type="button" class="btn btn-primary">前台</button>
     </a>
     <a href="">
       <button type="button" class="btn btn-primary">日志</button>
@@ -93,7 +93,6 @@
 		  <li><a href="<?php echo U('Index/index');?>">首页</a></li>
 		  <li class="active">数据表单</li>
 		</ol>
-		
     	<table class="table table-striped" id="tab">
         <tr>
         <th>表格</th>
@@ -135,10 +134,13 @@
         	</a><?php endif; ?>
         </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-		</table>
+		</table>	
+		<div align="right">
 		<a href="<?php echo U('Data/addtab');?>">
 		<button type="button" name="add_td" class="btn btn-primary">创建新表格</button>
 		</a>
+		<!--<a href="<?php echo U('Base/dataBak');?>"><button type="button" class="btn btn-success">数据库备份</button></a>-->
+		</div>
     </div>
     <!--body-->
 
