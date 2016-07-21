@@ -8,7 +8,7 @@
 		  <li class="active">增加值</li>
 		</ol>
 		<if condition="$content[0]['id'] neq ''">
-			<form  method="post" action="{:U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']))}">
+			<form  method="post" action="{:U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']))}" name="adddetail" id="adddetail">
 		<else />
 		  	<form  method="post" action="{:U('Data/adddetail',array('namee'=>$title))}">
 		</if>
@@ -16,10 +16,10 @@
 			
 		
 		  <div class="form-group">
-		    <label for="exampleInputEmail1">{$name[$i]}-----属性值：{$nature[$i]['type']}</label>
+		    <label for="exampleInputEmail1">{$name[$i]}---属性值：{$nature[$i]['type']}---备注：{$nature[$i]['comment']}</label>
 		    <if condition="$nature[$i]['type'] eq 'text' ">
 		    <textarea class="form-control" rows="4" name="{$name[$i]}" placeholder="{$nature[$i]['comment']}">
-		    	{$nature[$i]['comment']}
+		    	{$content[0][$name[$i]]}
 		    </textarea>
 		    <else />
 		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{$nature[$i]['comment']}" name="{$name[$i]}" 	value="{$content[0][$name[$i]]}"	    	
@@ -33,12 +33,27 @@
 		</for>
 		<div align="right">
 			<if condition="$content[0]['id'] neq ''">
-				<button type="submit" class="btn btn-success">修改</button>
+				<button type="button" class="btn btn-success" id="addtype" name="addtype">修改</button>
 			<else />
 		  		<button type="submit" class="btn btn-primary">添加</button>
 		  	</if>
 		</div>
 		</form>
     </div>
+    <script>
+    $("#addtype").click(function(){
+             $.ajax({
+                 type: "post",
+                 url: "{:U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']))}",     
+                 data: $("#adddetail").serialize(),    
+                 success: function(data) {
+                     alert("提交成功！");
+                 },
+                 error: function(data) {
+                     alert(data);
+                 }
+             })
+         });
+    </script>
     <!--body-->
 <include file="Base:common-f" />

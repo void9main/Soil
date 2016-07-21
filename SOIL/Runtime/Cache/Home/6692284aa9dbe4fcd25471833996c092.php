@@ -156,9 +156,9 @@
 	        	<a href="<?php echo U('Data/adddetail',array('id'=>$vo2['id'],'names'=>$title));?>">
 	        	<button type="button" class="btn btn-success btn-xs">修改</button>
 	        	</a>
-	        	<a href="<?php echo U('Data/deletedata',array('id'=>$vo2['id'],'name'=>$title));?>">
+	        	<!--<a href="<?php echo U('Data/deletedata',array('id'=>$vo2['id'],'name'=>$title));?>">
 	        	<button type="button" class="btn btn-danger btn-xs">删除</button>
-	        	</a><?php endif; ?>
+	        	</a>--><?php endif; ?>
 	        </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>

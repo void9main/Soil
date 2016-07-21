@@ -95,25 +95,40 @@
 		  <li><a href="<?php echo U('Data/tabdetail',array('name'=>$title));?>">返回</a></li>
 		  <li class="active">增加值</li>
 		</ol>
-		<?php if($content[0]['id'] != ''): ?><form  method="post" action="<?php echo U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']));?>">
+		<?php if($content[0]['id'] != ''): ?><form  method="post" action="<?php echo U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']));?>" name="adddetail" id="adddetail">
 		<?php else: ?>
 		  	<form  method="post" action="<?php echo U('Data/adddetail',array('namee'=>$title));?>"><?php endif; ?>
-		<?php $__FOR_START_3885__=0;$__FOR_END_3885__=$count;for($i=$__FOR_START_3885__;$i < $__FOR_END_3885__;$i+=1){ ?><div class="form-group">
-		    <label for="exampleInputEmail1"><?php echo ($name[$i]); ?>-----属性值：<?php echo ($nature[$i]['type']); ?></label>
+		<?php $__FOR_START_8091__=0;$__FOR_END_8091__=$count;for($i=$__FOR_START_8091__;$i < $__FOR_END_8091__;$i+=1){ ?><div class="form-group">
+		    <label for="exampleInputEmail1"><?php echo ($name[$i]); ?>---属性值：<?php echo ($nature[$i]['type']); ?>---备注：<?php echo ($nature[$i]['comment']); ?></label>
 		    <?php if($nature[$i]['type'] == 'text' ): ?><textarea class="form-control" rows="4" name="<?php echo ($name[$i]); ?>" placeholder="<?php echo ($nature[$i]['comment']); ?>">
-		    	<?php echo ($nature[$i]['comment']); ?>
+		    	<?php echo ($content[0][$name[$i]]); ?>
 		    </textarea>
 		    <?php else: ?>
 		    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="<?php echo ($nature[$i]['comment']); ?>" name="<?php echo ($name[$i]); ?>" 	value="<?php echo ($content[0][$name[$i]]); ?>"	    	
 		    <?php if(($nature[$i]['default'] != '') OR ($name[$i] == 'id')): ?>readonly<?php endif; ?>><?php endif; ?>
 		  </div><?php } ?>
 		<div align="right">
-			<?php if($content[0]['id'] != ''): ?><button type="submit" class="btn btn-success">修改</button>
+			<?php if($content[0]['id'] != ''): ?><button type="button" class="btn btn-success" id="addtype" name="addtype">修改</button>
 			<?php else: ?>
 		  		<button type="submit" class="btn btn-primary">添加</button><?php endif; ?>
 		</div>
 		</form>
     </div>
+    <script>
+    $("#addtype").click(function(){
+             $.ajax({
+                 type: "post",
+                 url: "<?php echo U('Data/adddetail',array('namef'=>$title,'id'=>$content[0]['id']));?>",     
+                 data: $("#adddetail").serialize(),    
+                 success: function(data) {
+                     alert("提交成功！");
+                 },
+                 error: function(data) {
+                     alert(data);
+                 }
+             })
+         });
+    </script>
     <!--body-->
 
 	</body>
