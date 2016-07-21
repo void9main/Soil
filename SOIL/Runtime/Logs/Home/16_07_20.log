@@ -1,0 +1,1207 @@
+[ 2016-07-20T16:55:46+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/out/out.html%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-20T16:56:12+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/out/out.html%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T16:56:17+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sj_yuyaosoil` WHERE ( `down`='三七市' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_yuyaosoil` WHERE ( `down`='三七市' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T16:56:19+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/out/out.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+
+[ 2016-07-20T16:57:36+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil` WHERE ( `down`='三七市' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_yuyaosoil` WHERE ( `down`='三七市' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:00:21+08:00 ] ::1 /soil/index.php/Home/Data/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: show table status [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:00:25+08:00 ] ::1 /soil/index.php/Home/Type/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sj_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:01:43+08:00 ] ::1 /soil/index.php/Home/Type/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_usergroup` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_usergroup`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:01:46+08:00 ] ::1 /soil/index.php/Home/Type/actionlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='type' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_typerule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sj_typerule`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:02:53+08:00 ] ::1 /soil/index.php/Home/Data/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: show table status [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-20T17:02:58+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/name/sj_usergroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_usergroup' [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sj_usergroup` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_usergroup`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sj_usergroup` LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: list D:\WWW\SOIL\SOIL\Home\Controller\DataController.class.php 第 148 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:03:01+08:00 ] ::1 /soil/index.php/Home/Data/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: show table status [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+NOTIC: [8] Use of undefined constant Dynamic - assumed 'Dynamic' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\a972f372076d4ed29284f4d552316221.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:03:03+08:00 ] ::1 /soil/index.php/Home/Data/tabdetail/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:03:07+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/10/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 90,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:32:24+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/18/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 170,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:32:28+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/20/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 190,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:32:30+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/30/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 290,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:32:33+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/40/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 390,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:32:35+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/50/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 490,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:32:38+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/60/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 590,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:32:42+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/61/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 600,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:32:45+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/60/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 590,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-20T17:32:48+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/59/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 580,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:32:51+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/58/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0000s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 570,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-20T17:33:08+08:00 ] ::1 /soil/index.php/Home/data/tabdetail/page/56/name/sj_yuyaosoil.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='data' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SELECT
+		COLUMN_NAME,
+		COLUMN_COMMENT  AS  `备注`
+		FROM information_schema.COLUMNS WHERE TABLE_NAME='sj_yuyaosoil' [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sj_yuyaosoil` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sj_yuyaosoil`  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sj_yuyaosoil` LIMIT 550,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 120 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 154 行.
+NOTIC: [8] Undefined variable: search D:\WWW\SOIL\SOIL\Runtime\Cache\Home\6692284aa9dbe4fcd25471833996c092.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-07-20T17:33:15+08:00 ] ::1 /soil/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\BaseController::left(), called in D:\WWW\SOIL\SOIL\Home\Controller\IndexController.class.php on line 11 and defined D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `sj_left` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: type D:\WWW\SOIL\SOIL\Home\Controller\BaseController.class.php 第 7 行.
+SQL: SELECT * FROM `sj_left` WHERE ( `type`='' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_top` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_top`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_user` WHERE ( `name`='super' )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
